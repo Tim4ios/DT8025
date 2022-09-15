@@ -1,0 +1,46 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "AppleClang",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/usr/local/include",
+						"/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include",
+						"/Library/Developer/CommandLineTools/usr/include",
+						"/usr/include"
+					],
+					"linkDirectories" : 
+					[
+						"/usr/lib",
+						"/usr/local/lib"
+					],
+					"linkFrameworkDirectories" : 
+					[
+						"/Library/Frameworks",
+						"/System/Library/Frameworks"
+					],
+					"linkLibraries" : []
+				},
+				"path" : "/Library/Developer/CommandLineTools/usr/bin/cc",
+				"version" : "10.0.0.10001044"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}
