@@ -288,7 +288,7 @@ Assignment 1. In this case, use standard gcc to compile the code that will run w
 Attached Files:
 File a2p1.zip (31.117 KB)
 
-## PiFace Control and Display
+### PiFace Control and Display
 
 The PiFace Control and Display allows the display of 16 characters by 2 lines. Please, refer to the PiFace Control and
 Display website for more information about it.
@@ -301,22 +301,28 @@ The objective of Part 1 is to complete the implementation of a C library for the
 * PiFace Control and Display uses the HD44780 LCD to display alphanumeric characters. The HD44780 LCD sits on top of an
   MCP23S17 general purpose I/O expander, which operates in sequential mode to communicate with the Raspberry Pi's SPI
   interface.
-*
+
     * It operates in 4-bit mode and has two communication channels.
-*
+
     * One channel is used to transmit commands and another channel to send data.
+  
 * Showing some characters on the PiFace's display requires writing the respective value into the expander's data
   register. This can be done using the following provided methods:
-  *static void lcd_write_cmd(uint8_t cmd)*
-  *static void lcd_write_data(uint8_t data)*
+   ```
+  static void lcd_write_cmd(uint8_t cmd)
+  static void lcd_write_data(uint8_t data)
+  ```
+
   Among others, the respective commands for clearing the display and moving the cursor can be found in the HD44780 LCD's
   specification.
 
 4. Complete the implementation of piface
    Implement the following functions in the file piface.c
+   ```
    void piface_putc(char c);
    void piface_puts(char s[]);
    void piface_clear(void);
+   ```
 3. Use the functions in a2p1.c
    Connect the PiFace Control and Display to the RPi's GPIO.
    In a2p1.c, write the code for a program that repeatedly displays an arbitrary text and clears the LCD.
@@ -328,78 +334,94 @@ The objective of Part 1 is to complete the implementation of a C library for the
    piface.c
    piface.h
    a2p1.c
-   DON'T submit compressed files, i.e., .zip or .rar files.
+   **DON'T submit compressed files, i.e., .zip or .rar files.**
    All students in the group are equally responsible for the submitted source code.
    The group ensures that the submitted code does not include cheating and plagiarism issues.
+   
+
    Congratulations!!!!!
-   Assignment
-   Assignment 2 - Part 2 (click to submit results)
+
+
+   ## Assignment
+   ### Assignment 2 - Part 2 (click to submit results)
    Attached Files:
    File a2p2.zip (42.849 KB)
-   Taylor expansion of e^x
+
+   ### Taylor expansion of e^x
    The value of the exponential function e^x can be expressed using Taylor Series. Its algorithm has a linear time
    complexity O(n), i.e., it is proportionally longer to complete as the input grows. For example, computing e^1 is 10
    times faster than e^10.
+
    The Taylor expansion of e^x will be used in Part 3 to concurrently execute with another task.
+   
    Thus, the objective of Part 2 is to implement the Taylor expansion of e^x. More specifically:
-1. Write the specification (description, pre-and post-condition) for the function iexp()in expstruct.h
+### 1. Write the specification (description, pre-and post-condition) for the function iexp()in expstruct.h
    Use the following signature:
+   ```
    struct expStruct {
    int expInt;
    int expFraction;
    };
 
-typedef struct expStruct ExpStruct;
+   typedef struct expStruct ExpStruct;
 
-ExpStruct* iexp ( int );
+   ExpStruct* iexp ( int );
+   ```
 
-2. Implement the function iexp()in expstruct.c
+### 2. Implement the function iexp()in expstruct.c
    The iexp() function is supposed to calculate the value of e^n (n = the input parameter) with two degrees of precision
    and return it in a struct comprising its integer and fractional parts, where the fractional part comprises two digits
    after the ".", i.e., the decimal separator.
    Consider this description of the exponential function (at point a=0) and the first (n+1) terms to calculate e^n.
-3. Use the functions in a2p2.c
+### 3. Use the functions in a2p2.c
    In a2p2.c, write the code for a program that shows the values of the exponential function for natural numbers,
    starting from 1 and moving upwards up to 21.
    The program must show the values on the PiFace Display connected to RPi GPIO.
    Once your code is complete, compile it and boot the RPi using the newly created kernel, i.e., a2p2.img.
    Because the RPi can calculate e^n rather fast, you might add a delay in each iteration of the sum of terms to be able
    to visualize results.
-4. Submitting results
+### 4. Submitting results
    For Assignment 2 Part 2, one student in the group must upload (click on the title of this section) the following
    files:
+   ```
    expstruct.c
    expstruct.h
    piface.h
    piface.h
    a2p2.c
-   DON'T submit compressed files, i.e., .zip or .rar files.
+   ```
+   **DON'T submit compressed files, i.e., .zip or .rar files.**
+
    All students in the group are equally responsible for the submitted source code.
    The group ensures that the submitted code does not include cheating and plagiarism issues.
-   Congratulations!!!!!
-   Assignment
-   Assignment 2 - Part 3 (click to submit results)
+   **Congratulations!!!!!**
+
+##  Assignment
+### Assignment 2 - Part 3 (click to submit results)
    Attached Files:
    File a2p3.zip (42.506 KB)
    File TheoryA2.pdf (379.763 KB)
-   Manual Interleaving
+
+  ### Manual Interleaving
    Embedded systems are said to be "event-driven", i.e., the primary function is to respond to "events". But how does
    the program become aware of changes in the system’s environment? How does it respond to events? Two approaches:
-   Status-driven using polling (busy waiting)
-   Interrupts driven
+  * Status-driven using polling (busy waiting)
+  * Interrupts driven
    In Part 3, students will build kernels that execute two tasks according to an offline scheduler, i.e., tasks are
    executed in sequence at a fixed rate in a big loop. Possibly, limit certain tasks to every N turns of the loop only.
+   
    Please, refer to the attached TheoryA2.pdf, which motivates the need for an automatic interleaving approach.
+   
    The goal is to build a kernel that calculates and displays the result e^n while blinking the LED at a constant rate.
-1. Hardware setup
+### 1. Hardware setup
    Remove all components connected to the RPi GPIO.
    Connect the breadboard circuit assessed in Assignment 1 to GPIO16 and GND pin 39.
    Alight and connect the stacking header to the PiFace Control and Display.
    Now, connect the elevated PiFace Control and Display to the RPi GPIO.
-2. Download a2p3.zip and uncompress it.
+### 2. Download a2p3.zip and uncompress it.
    Add the C library files you developed to blink the LED into \lib.
    Add the C library files you developed for the PiFace into \lib.
-3. Cyclic execution in a2p3.c
+### 3. Cyclic execution in a2p3.c
    Write a program that combines the blinking of LED (a1p2) and the exponential function (a2p2) to:
    Turn the LED ON,
    Calculate the exponential function, and
@@ -408,14 +430,14 @@ ExpStruct* iexp ( int );
    The LED will blink at a similar rate as the PiFace LCD displays the result of e^n. As n increases, the time between
    LED on and off will also increase. The provided a2p3.cyclic.img kernels exemplied this behavior.
    Question: how to make the LED blink at a constant rate?
-4. Manual interleaving
+### 4. Manual interleaving
    Observing the previous result, the LED blinks more slowly than it should as the exponential value of the number
    grows.
    NOTE: If the previous kernel does not present such behaviour, try to add some constant delay in the iexp() function.
    Design and implement a fair interleaving of the tasks, i.e. blinking and exponential, such that the blinking speed
    remains constant.
    Once your code is complete, compile it and boot the RPi using the newly created kernel, i.e., a2p2.img.
-5. Submitting results
+### 5. Submitting results
    For Assignment 2 Part 2, one student in the group must upload (click on the title of this section) the following
    files:
    expstruct.c
@@ -426,4 +448,5 @@ ExpStruct* iexp ( int );
    DON'T submit compressed files, i.e., .zip or .rar files.
    All students in the group are equally responsible for the submitted source code.
    The group ensures that the submitted code does not include cheating and plagiarism issues.
-   Congratulations!!!!!
+  
+   **Congratulations!!!!!**
