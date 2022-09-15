@@ -1,12 +1,19 @@
 # DT8025
 
+-------------
+
 *In this course there are 5 assignments*
 
-## Assignment 1
+-------------
 
+# Assignment 1
+<details><summary>See more</summary>
+<p>
 Attached Files:
 File resetbit.c (957 B)
 File helloworld.img (16.656 KB)
+
+-------------
 
 ### Objectives
 
@@ -15,6 +22,9 @@ File helloworld.img (16.656 KB)
 * Familiarise and understand the basic C programming concepts required for the rest of the course.
 
 * To acquire a basic skill for the Raspberry Pi bare-metal programming.
+
+-------------
+
 
 ### Content
 
@@ -26,24 +36,35 @@ File helloworld.img (16.656 KB)
 * Part 1 and Part 2 results will be graded, and each group will submit the implemented results according to the
   deadline.
 
+-------------
+
 ### Grading and Deadline
 
-Assignment 1 will be graded during the Grading Session on Friday, September 16th from 15:15.
+* Assignment 1 will be graded during the Grading Session on Friday, September 16th from 15:15.
 The deadline for developed results is Thursday, September 15th at 15:00.
-Q&A
-Questions will be addressed during the supervision sessions.
-Questions or comments relevant to other students shall be posted on the Discussions forum.
-Please, don't post source code.
-Required equipment and software
-Lab kit
-Raspberry Pi OS
-A serial console software, such as PuTTY.
-PuTTY, an SSH, Telnet, and serial communication client that works on Windows, macOS, and Linux.
-References
-Valvers Bare Metal Programming in C
-Cambridge Baking Pi
-C reference (Wagner recommends ;D)
-Preparation 1: C Programming
+* Q&A
+* Questions will be addressed during the supervision sessions.
+* Questions or comments relevant to other students shall be posted on the Discussions forum.
+* Please, don't post source code.
+* Required equipment and software
+
+-------------
+
+### Lab kit
+* Raspberry Pi OS
+* A serial console software, such as PuTTY.
+* PuTTY, an SSH, Telnet, and serial communication client that works on Windows, macOS, and Linux.
+
+-------------
+
+### References
+* Valvers Bare Metal Programming in C
+* Cambridge Baking Pi
+* C reference (Wagner recommends ;D)
+
+-------------
+
+### Preparation 1: C Programming
 
 1. Make sure the RPi can boot the Raspberry Pi OS.
    Otherwise, it is part of the assignment to install the Raspberry Pi OS. Please, check the installation guide.
@@ -132,12 +153,14 @@ Preparation 1: C Programming
    The new kernel shall now execute on the RPi.
    Expected result
 
-Assignment
-Assignment 1 - Part 1 (click to submit results)
+-------------
+
+## Assignment 1 - Part 1 (click to submit results)
 Attached Files:
 File a1p1.zip (34.57 KB)
-Bitwise operators in C
-Bitwise operators are commonly used to manipulate bit sets and bit masks.
+
+* Bitwise operators in C
+* Bitwise operators are commonly used to manipulate bit sets and bit masks.
 The objectives of Part 1 are to learn how to use bitwise operators and encapsulate them into functions. More
 specifically:
 Include the required documentation as comments in iregister.h.
@@ -191,11 +214,15 @@ Assignment 1. In this case, use standard gcc to compile the code that will run w
    All students in the group are equally responsible for the submitted source code.
    The group ensures that the submitted code does not include cheating and plagiarism issues.
    Congratulations!!!!!
-   Assignment
-   Assignment 1 - Part 2 (click to submit results)
+
+-------------
+ 
+  ## Assignment 1 - Part 2 (click to submit results)
    Attached Files:
    File a1p2.zip (28.984 KB)
+
    Bare-metal LED control via the Raspberry Pi GPIO
+
 1. Lighting a LED
    Using the breadboard, the 270Ω (ohm) resistor, LED and cables included in Lab Kit, wire the circuit described in
    Raspberry Pi Learning Resources.
@@ -239,13 +266,23 @@ Assignment 1. In this case, use standard gcc to compile the code that will run w
    All students in the group are equally responsible for the submitted source code.
    The group ensures that the submitted code does not include cheating and plagiarism issues.
    Congratulations!!!!!
+</p>
+</details>
 
-## Assignment 2
+-------------
+
+# Assignment 2
+<details><summary>See more</summary>
+<p>
+
+-------------
 
 ### Objectives
 
 * Straighten your skills in working with the Raspberry Pi, particularly concerning input and output.
 * Experiment with concurrency (without any underlying support) and observe the main issues.
+
+-------------
 
 ### Content
 
@@ -254,10 +291,14 @@ Assignment 1. In this case, use standard gcc to compile the code that will run w
 * In Part 2, implement Taylor Expansion and display results in the PiFace Display.
 * In Part 3, implement manual interleaving of two tasks.
 
+-------------
+
 ### Grading and Deadline
 
 * Assignment 2 will be graded during the Grading Session on Friday, September 23th from 13:15.
 * The deadline for developed results is Thursday, September 22th at 15:00.
+
+-------------
 
 ### Q&A
 
@@ -266,12 +307,16 @@ Assignment 1. In this case, use standard gcc to compile the code that will run w
 * Please, don't post source code.
 * Required equipment and software
 
+-------------
+
 ### Lab kit
 
 * PiFace Control and Display + breadboard circuit for the LED.
 * Raspberry Pi OS (if you are compiling the code on it)
 * For debugging, maybe a serial console software, such as PuTTY.
 * PuTTY, is an SSH, Telnet, and serial communication client that works on Windows, macOS, and Linux.
+
+-------------
 
 ### References
 
@@ -281,12 +326,14 @@ Assignment 1. In this case, use standard gcc to compile the code that will run w
 * HD44780U LCD's specification
 * Taylor series
 
-## Assignment
+-------------
 
-### Assignment 2 - Part 1 (click to submit results)
+## Assignment 2 - Part 1 (click to submit results)
 
 Attached Files:
 File a2p1.zip (31.117 KB)
+
+-------------
 
 ### PiFace Control and Display
 
@@ -337,15 +384,21 @@ The objective of Part 1 is to complete the implementation of a C library for the
    **DON'T submit compressed files, i.e., .zip or .rar files.**
    All students in the group are equally responsible for the submitted source code.
    The group ensures that the submitted code does not include cheating and plagiarism issues.
-   
+
+
+-------------
 
    Congratulations!!!!!
 
 
-   ## Assignment
-   ### Assignment 2 - Part 2 (click to submit results)
+ 
+-------------
+
+## Assignment 2 - Part 2 (click to submit results)
    Attached Files:
    File a2p2.zip (42.849 KB)
+
+-------------
 
    ### Taylor expansion of e^x
    The value of the exponential function e^x can be expressed using Taylor Series. Its algorithm has a linear time
@@ -354,7 +407,10 @@ The objective of Part 1 is to complete the implementation of a C library for the
 
    The Taylor expansion of e^x will be used in Part 3 to concurrently execute with another task.
    
-   Thus, the objective of Part 2 is to implement the Taylor expansion of e^x. More specifically:
+ Thus, the objective of Part 2 is to implement the Taylor expansion of e^x. More specifically:
+
+-------------
+
 ### 1. Write the specification (description, pre-and post-condition) for the function iexp()in expstruct.h
    Use the following signature:
    ```
@@ -368,7 +424,7 @@ The objective of Part 1 is to complete the implementation of a C library for the
    ExpStruct* iexp ( int );
    ```
 
-### 2. Implement the function iexp()in expstruct.c
+### 2. Implement the function iexp() in expstruct.c
    The iexp() function is supposed to calculate the value of e^n (n = the input parameter) with two degrees of precision
    and return it in a struct comprising its integer and fractional parts, where the fractional part comprises two digits
    after the ".", i.e., the decimal separator.
@@ -394,13 +450,20 @@ The objective of Part 1 is to complete the implementation of a C library for the
 
    All students in the group are equally responsible for the submitted source code.
    The group ensures that the submitted code does not include cheating and plagiarism issues.
-   **Congratulations!!!!!**
+ 
+-------------
 
-##  Assignment
-### Assignment 2 - Part 3 (click to submit results)
+**Congratulations!!!!!**
+
+
+-------------
+
+## Assignment 2 - Part 3 (click to submit results)
    Attached Files:
    File a2p3.zip (42.506 KB)
    File TheoryA2.pdf (379.763 KB)
+
+-------------
 
   ### Manual Interleaving
    Embedded systems are said to be "event-driven", i.e., the primary function is to respond to "events". But how does
@@ -413,14 +476,23 @@ The objective of Part 1 is to complete the implementation of a C library for the
    Please, refer to the attached TheoryA2.pdf, which motivates the need for an automatic interleaving approach.
    
    The goal is to build a kernel that calculates and displays the result e^n while blinking the LED at a constant rate.
+
+-------------
+
 ### 1. Hardware setup
    Remove all components connected to the RPi GPIO.
    Connect the breadboard circuit assessed in Assignment 1 to GPIO16 and GND pin 39.
    Alight and connect the stacking header to the PiFace Control and Display.
    Now, connect the elevated PiFace Control and Display to the RPi GPIO.
+
+-------------
+
 ### 2. Download a2p3.zip and uncompress it.
    Add the C library files you developed to blink the LED into \lib.
    Add the C library files you developed for the PiFace into \lib.
+
+-------------
+
 ### 3. Cyclic execution in a2p3.c
    Write a program that combines the blinking of LED (a1p2) and the exponential function (a2p2) to:
    Turn the LED ON,
@@ -430,6 +502,9 @@ The objective of Part 1 is to complete the implementation of a C library for the
    The LED will blink at a similar rate as the PiFace LCD displays the result of e^n. As n increases, the time between
    LED on and off will also increase. The provided a2p3.cyclic.img kernels exemplied this behavior.
    Question: how to make the LED blink at a constant rate?
+
+-------------
+
 ### 4. Manual interleaving
    Observing the previous result, the LED blinks more slowly than it should as the exponential value of the number
    grows.
@@ -437,16 +512,30 @@ The objective of Part 1 is to complete the implementation of a C library for the
    Design and implement a fair interleaving of the tasks, i.e. blinking and exponential, such that the blinking speed
    remains constant.
    Once your code is complete, compile it and boot the RPi using the newly created kernel, i.e., a2p2.img.
+
+-------------
+
 ### 5. Submitting results
    For Assignment 2 Part 2, one student in the group must upload (click on the title of this section) the following
    files:
-   expstruct.c
+   ```
+   expstruct.c 
    expstruct.h
    piface.h
    piface.h
    a2p3.c
-   DON'T submit compressed files, i.e., .zip or .rar files.
+   ```
+   **DON'T submit compressed files, i.e., .zip or .rar files.**
+
    All students in the group are equally responsible for the submitted source code.
    The group ensures that the submitted code does not include cheating and plagiarism issues.
-  
+ 
+-------------
+
    **Congratulations!!!!!**
+- ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `#f03c15`
+</p>
+</details>
+
+-------------
+

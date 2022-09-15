@@ -18,7 +18,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d48a88e7-3145-42a7-af5e-a3ce2e96ea94" name="Changes" comment="README updatering">
+    <list default="true" id="d48a88e7-3145-42a7-af5e-a3ce2e96ea94" name="Changes" comment="Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -43,7 +43,9 @@
     <option name="minorVersion" value="2.1" />
   </component>
   <component name="ProjectId" id="2EnyHmn6Tnhk52KiW6SFDcAYibg" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -135,7 +137,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663248364894</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update">
+      <created>1663250834278</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663250834279</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update">
+      <created>1663250848263</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663250848263</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +176,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="README updatering" />
-    <option name="LAST_COMMIT_MESSAGE" value="README updatering" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
 </project>
