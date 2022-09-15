@@ -4,7 +4,7 @@
 MAINFILE = a2p2
 
 OBJS	=  lib/expstruct.o lib/piface.o
-OBJS	+= lib/uart.o lib/rpi-armtimer.o lib/rpi-gpio.o lib/rpi-interrupts.o lib/rpi-systimer.o 
+OBJS	+= lib/rpi-armtimer.o lib/rpi-gpio.o lib/rpi-interrupts.o lib/rpi-systimer.o
 
 OBJS	+= lib/startup.o lib/syscalls.o 
 OBJS	+= $(MAINFILE).o

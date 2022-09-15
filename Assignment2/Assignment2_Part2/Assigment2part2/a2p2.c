@@ -6,9 +6,9 @@
 */
 
 #include <stdio.h>
-
 #include "expstruct.h"
 #include "piface.h"
+#include "rpi-systimer.h"
 
 int main()
 {
