@@ -14,14 +14,12 @@
 ExpStruct *iexp(int x){
 	ExpStruct *e = malloc(sizeof(ExpStruct));
     int i = 0;
-    int g = 0;
     int n = 21;
-    unsigned long long fact = 1;
 
     for (i = 0; i <= n; ++i) {
         e->expFraction *= i;
         e->expInt = i;
-        e = (x^i) /  e->expFraction;
+        e += (x^i) /  e->expFraction;
     }
 
 
