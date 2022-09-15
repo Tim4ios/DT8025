@@ -6,9 +6,10 @@
 */
 
 #include <stdio.h>
-
+#include <malloc.h>
 #include "expstruct.h"
 #include "piface.h"
+#include "rpi-systimer.h"
 
 int main()
 {
@@ -23,8 +24,8 @@ int main()
     
     value = iexp(10);
 	
-    sprintf(str,"%d: %d.%d", 10, value->expInt, value->expFraction);
-	piface_puts(str);
+    //sprintf(str,"%d: %d.%d", 10, value->expInt, value->expFraction);
+	piface_puts((char *) value);
 	free(value);
 
 	return 0;
