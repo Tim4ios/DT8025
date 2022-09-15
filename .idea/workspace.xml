@@ -20,16 +20,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d48a88e7-3145-42a7-af5e-a3ce2e96ea94" name="Changes" comment="k">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.elf" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.img" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.img" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.o" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/expstruct.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/expstruct.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/expstruct.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/expstruct.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/expstruct.o" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/expstruct.o" afterDir="false" />
-    </list>
+    <list default="true" id="d48a88e7-3145-42a7-af5e-a3ce2e96ea94" name="Changes" comment="k" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +32,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="Make.Settings">
     <option name="path" value="C:\Program Files (x86)\GnuWin32\bin\make.exe" />
@@ -145,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663249145170</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="k">
+      <created>1663262439882</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663262439882</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
