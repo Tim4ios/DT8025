@@ -25,7 +25,7 @@ int main()
     value = iexp(10);
 	
     //sprintf(str,"%d: %d.%d", 10, value->expInt, value->expFraction);
-	piface_puts((char *) value);
+	piface_puts((char *) value->expInt);
 
 	free(value);
 
