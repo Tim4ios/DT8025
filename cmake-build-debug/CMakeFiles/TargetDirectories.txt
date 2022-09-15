@@ -1,0 +1,3 @@
+/Users/joelpalsson/CLionProjects/DT8025/cmake-build-debug/CMakeFiles/DT8025.dir
+/Users/joelpalsson/CLionProjects/DT8025/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/joelpalsson/CLionProjects/DT8025/cmake-build-debug/CMakeFiles/rebuild_cache.dir
