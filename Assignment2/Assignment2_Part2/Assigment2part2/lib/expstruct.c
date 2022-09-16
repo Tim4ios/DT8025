@@ -9,36 +9,47 @@
 
 #include <stddef.h>
 #include <stdlib.h>
-#include <math.h>
 #include "expstruct.h"
+#include "piface.h"
 
-int fac(int a) //function to find factorial
+double fac(int a) //function to find factorial
 {
     if (a == 0 || a == 1)
         return 1;
-    int f = 1;
+    double f = 1;
     for (int w = 0; w < a; ++w) {
         f *= (a - w);
     }
     return f;
 }
 
+double ppow(int base, int exp)
+{
+    double result = 1;
+
+    for (exp; exp>0; exp--)
+    {
+        result = result * base;
+    }
+    return result;
+
+}
+
 ExpStruct *iexp(int x) {
     ExpStruct *e = malloc(sizeof(ExpStruct));
-
-    int k = 0;
-    double h, g = 0;
-    do {
-        e->expInt += ((x ^ (k)) / (fac(k)));
-        e->expFraction += (int) modf(g, &h);
-        k++;
-
+    double h = 0;
+    int f;
+    int y;
+    double g;
+    for (int i = 0; i < 22; i++) {
+        h = h + ppow(x, i) / (fac(i));
+        e->expInt = h;
+        g = (h - e->expInt) * 100;
+        f = g;
+        e->expFraction = f + e->expFraction;
     }
-    while(k < 22);
-
-
 
     return e;
 
-
 }
+

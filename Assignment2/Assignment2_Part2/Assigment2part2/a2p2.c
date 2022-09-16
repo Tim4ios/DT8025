@@ -22,7 +22,7 @@ int main() {
     ExpStruct *value;
 
     value = iexp(10);
-    sprintf(str, "%d: %d.%d", 10 , value->expInt, value->expFraction);
+    sprintf(str, "%d: %d.%d", 10, value->expInt, value->expFraction);
     piface_puts(str);
     piface_clear();
     free(str);

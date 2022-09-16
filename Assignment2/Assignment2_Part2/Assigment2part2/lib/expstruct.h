@@ -6,17 +6,19 @@
 /*
  * Modified by Wagner Morais on Aug 2022.
  */
- 
+
 #ifndef _EXPSTRUCT_H
 #define _EXPSTRUCT_H
 
+#include <stdint.h>
+
 struct expStruct {
-	int expInt;
-	int expFraction;
+    int expInt;
+    int expFraction;
 };
 
 typedef struct expStruct ExpStruct;
 
-ExpStruct *iexp (int);
+ExpStruct *iexp(int);
 
 #endif
