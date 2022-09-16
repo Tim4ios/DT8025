@@ -163,10 +163,10 @@ File a1p1.zip (34.57 KB)
 * Bitwise operators are commonly used to manipulate bit sets and bit masks.
 The objectives of Part 1 are to learn how to use bitwise operators and encapsulate them into functions. More
 specifically:
-Include the required documentation as comments in iregister.h.
-Implement the functions, including post- and pre-conditions, in iregister.c.
-Implement a user interface showing the result of each function.
-REMEMBER
+* Include the required documentation as comments in `iregister.h.`
+* Implement the functions, including post- and pre-conditions, in `iregister.c.`
+* Implement a user interface showing the result of each function.
+#### REMEMBER
 C declarations and macro definitions are placed in a header file (.h).
 Documentation of function declarations include: WHAT the function does, parameters and return value.
 The actual implementation is included in the .c files and documentation includes the logic of HOW a function does
@@ -355,7 +355,7 @@ The objective of Part 1 is to complete the implementation of a C library for the
   
 * Showing some characters on the PiFace's display requires writing the respective value into the expander's data
   register. This can be done using the following provided methods:
-   ```
+   ```c
   static void lcd_write_cmd(uint8_t cmd)
   static void lcd_write_data(uint8_t data)
   ```
@@ -365,7 +365,7 @@ The objective of Part 1 is to complete the implementation of a C library for the
 
 4. Complete the implementation of piface
    Implement the following functions in the file piface.c
-   ```
+   ```c
    void piface_putc(char c);
    void piface_puts(char s[]);
    void piface_clear(void);
@@ -407,13 +407,13 @@ The objective of Part 1 is to complete the implementation of a C library for the
 
    The Taylor expansion of e^x will be used in Part 3 to concurrently execute with another task.
    
- Thus, the objective of Part 2 is to implement the Taylor expansion of e^x. More specifically:
+   Thus, the objective of Part 2 is to implement the Taylor expansion of e^x. More specifically:
 
 -------------
 
 ### 1. Write the specification (description, pre-and post-condition) for the function iexp()in expstruct.h
    Use the following signature:
-   ```
+   ```c
    struct expStruct {
    int expInt;
    int expFraction;
@@ -429,6 +429,7 @@ The objective of Part 1 is to complete the implementation of a C library for the
    and return it in a struct comprising its integer and fractional parts, where the fractional part comprises two digits
    after the ".", i.e., the decimal separator.
    Consider this description of the exponential function (at point a=0) and the first (n+1) terms to calculate e^n.
+
 ### 3. Use the functions in a2p2.c
    In a2p2.c, write the code for a program that shows the values of the exponential function for natural numbers,
    starting from 1 and moving upwards up to 21.
@@ -436,10 +437,11 @@ The objective of Part 1 is to complete the implementation of a C library for the
    Once your code is complete, compile it and boot the RPi using the newly created kernel, i.e., a2p2.img.
    Because the RPi can calculate e^n rather fast, you might add a delay in each iteration of the sum of terms to be able
    to visualize results.
+
 ### 4. Submitting results
    For Assignment 2 Part 2, one student in the group must upload (click on the title of this section) the following
    files:
-   ```
+   ```c
    expstruct.c
    expstruct.h
    piface.h
@@ -470,6 +472,7 @@ The objective of Part 1 is to complete the implementation of a C library for the
    the program become aware of changes in the system’s environment? How does it respond to events? Two approaches:
   * Status-driven using polling (busy waiting)
   * Interrupts driven
+
    In Part 3, students will build kernels that execute two tasks according to an offline scheduler, i.e., tasks are
    executed in sequence at a fixed rate in a big loop. Possibly, limit certain tasks to every N turns of the loop only.
    
@@ -518,12 +521,12 @@ The objective of Part 1 is to complete the implementation of a C library for the
 ### 5. Submitting results
    For Assignment 2 Part 2, one student in the group must upload (click on the title of this section) the following
    files:
-   ```
+   ```c
    expstruct.c 
    expstruct.h
    piface.h
    piface.h
-   a2p3.c
+   a2p3.
    ```
    **DON'T submit compressed files, i.e., .zip or .rar files.**
 
@@ -532,7 +535,7 @@ The objective of Part 1 is to complete the implementation of a C library for the
  
 -------------
 
-   **Congratulations!!!!!**
+   **!Congratulations!!!!!**
 - ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `#f03c15`
 </p>
 </details>
