@@ -7,10 +7,8 @@
  * Modified by Wagner Morais on Aug 2022.
  */
 
-#include <stddef.h>
 #include <stdlib.h>
 #include "expstruct.h"
-#include "piface.h"
 
 double fac(int a) //function to find factorial
 {
@@ -23,12 +21,10 @@ double fac(int a) //function to find factorial
     return f;
 }
 
-double ppow(int base, int exp)
-{
+double ppow(int base, int exp) {
     double result = 1;
 
-    for (exp; exp>0; exp--)
-    {
+    for (exp; exp > 0; exp--) {
         result = result * base;
     }
     return result;
@@ -37,19 +33,17 @@ double ppow(int base, int exp)
 
 ExpStruct *iexp(int x) {
     ExpStruct *e = malloc(sizeof(ExpStruct));
-    double h = 0;
-    int f;
-    int y;
     double g;
-    for (int i = 0; i < 22; i++) {
-        h = h + ppow(x, i) / (fac(i));
-        e->expInt = h;
-        g = (h - e->expInt) * 100;
-        f = g;
-        e->expFraction = f + e->expFraction;
-    }
+    double h = 0;
+    int i;
+
+    h += ppow(x, i) / (fac(i));
+    e->expInt = h;
+    //while(((h - e->expInt)) < 0.001) //Måste kolla för 2decimalers noggranhet
+    g += ((h - e->expInt) * 100);
+    e->expFraction = g;
+
 
     return e;
-
 }
 

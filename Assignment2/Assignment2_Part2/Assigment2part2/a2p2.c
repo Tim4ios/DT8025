@@ -20,11 +20,16 @@ int main() {
     //RPI_WaitMicroSeconds(20000);
     //piface_clear();
     ExpStruct *value;
+    for (int i = 0; i < 21; ++i) {
+        value = iexp(10);
+        sprintf(str, "%d: %d.%d", i, value->expInt, value->expFraction);
+        piface_puts(str);
+        piface_clear();
 
-    value = iexp(10);
-    sprintf(str, "%d: %d.%d", 10, value->expInt, value->expFraction);
-    piface_puts(str);
-    piface_clear();
+    }
+
+
+
     free(str);
     free(value);
 
