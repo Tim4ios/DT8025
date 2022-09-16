@@ -24,7 +24,6 @@ int fac(int a) //function to find factorial
 }
 
 ExpStruct *iexp(int x) {
-
     ExpStruct *e = malloc(sizeof(ExpStruct));
 
     int k = 0;
@@ -32,7 +31,6 @@ ExpStruct *iexp(int x) {
     do {
         e->expInt += ((x ^ (k)) / (fac(k)));
         e->expFraction += (int) modf(g, &h);
-        e->expCounter = k;
         k++;
 
     }

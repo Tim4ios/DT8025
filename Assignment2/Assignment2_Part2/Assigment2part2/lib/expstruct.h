@@ -13,7 +13,6 @@
 struct expStruct {
 	int expInt;
 	int expFraction;
-    int expCounter;
 };
 
 typedef struct expStruct ExpStruct;
