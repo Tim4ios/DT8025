@@ -6,7 +6,7 @@
 */
 
 #include <stdio.h>
-#include <malloc.h>
+#include "stdlib.h"
 #include "expstruct.h"
 #include "piface.h"
 
