@@ -67,92 +67,95 @@ The deadline for developed results is Thursday, September 15th at 15:00.
 ### Preparation 1: C Programming
 
 1. Make sure the RPi can boot the Raspberry Pi OS.
-   Otherwise, it is part of the assignment to install the Raspberry Pi OS. Please, check the installation guide.
+   * Otherwise, it is part of the assignment to install the Raspberry Pi OS. Please, check the installation guide.
 2. Writing and compiling C code.
-   Some students might use the RPi as a development environment to write and compile code.
-   Writing and compiling code on another PC would probably be more convenient for the actual assignments. However, you
+   * Some students might use the RPi as a development environment to write and compile code.
+     * Writing and compiling code on another PC would probably be more convenient for the actual assignments. However, you
    can write and test functions using RPi.
-   Web-based compilers for C can also be used to write and test C code.
-   Using a text or code editor, open the attached resetbit.c file.
-   Try to understand what the program does. Some of the logic will be useful during this assignment.
-   To compile the program, type the following command in the command line:
-   gcc /PATH_TO_C_FILE/C_FILE.c -o /PATH_TO_EXECUTATLE/EXECUTABLE
-   For example: gcc resetbit.c -o resetbit
-   If the compilation succeeds, run the executable.
-   Preparation 2: Bare-Metal Programming for Raspberry Pi
-   Bare-metal programming is a term used to describe software development without an operating system's support.
+   * Web-based compilers for C can also be used to write and test C code.
+   * Using a text or code editor, open the attached resetbit.c file.
+   * Try to understand what the program does. Some of the logic will be useful during this assignment.
+   * To compile the program, type the following command in the command line:
+   `gcc /PATH_TO_C_FILE/C_FILE.c -o /PATH_TO_EXECUTATLE/EXECUTABLE`
+      * For example: `gcc resetbit.c -o resetbit`
+   * If the compilation succeeds, run the executable.
+-------------
+### Preparation 2: Bare-Metal Programming for Raspberry Pi
+   *Bare-metal programming is a term used to describe software development without an operating system's support.
    Bare-metal software executes at the hardware level and is built to specific hardware. Embedded systems and real-time
    operating systems (RTOS) are examples of bare-metal software.
-1. Cross compiler for ARM
-   To compile a .c code to execute bare metal on the RPis 3, a bare metal C compiler for embedded ARM chips using
+
+#### 1. Cross compiler for ARM
+   * To compile a .c code to execute bare metal on the RPis 3, a bare metal C compiler for embedded ARM chips using
    Cortex-R/M processors is needed. The GNU Arm Embedded Toolchain is a ready-to-use, open-source suite of tools for C,
    C++ and assembly programming.
-   Writing and compiling code on another PC than the RPi would probably be more convenient for the actual assignments.
-   Windows OS
-   Download and install the gcc-arm-embedded Arm Cross Compiler Toolchain.
-   Download and install the Make for Windows. Make is a tool that automates building programs.
-   NOTE: it is important that your Windows PATH variable includes the path to gcc-arm-none-eabi and make bin folders.
-   Raspberry Pi OS
-   Install the gcc-arm-none-eabi GCC cross compiler using the command
-   sudo apt-get install gcc-arm-none-eabi
-   Compiling source code
-   To compile code, we use the gcc-arm-embedded Arm Cross Compiler Toolchain and the provided makefile in the
+   * **Writing and compiling code on another PC than the RPi would probably be more convenient for the actual assignments.**
+#### Windows OS
+   * Download and install the gcc-arm-embedded Arm Cross Compiler Toolchain.
+   * Download and install the Make for Windows. Make is a tool that automates building programs.
+   * **NOTE:** it is important that your Windows PATH variable includes the path to gcc-arm-none-eabi and make bin folders.
+#### Raspberry Pi OS
+   * Install the gcc-arm-none-eabi GCC cross compiler using the command
+      * sudo apt-get install gcc-arm-none-eabi
+#### Compiling source code
+   * To compile code, we use the gcc-arm-embedded Arm Cross Compiler Toolchain and the provided makefile in the
    assignments.
-   You will find a Makefile file in the directory of every code connected to the assignments. The Makefile file takes
+     * You will find a Makefile file in the directory of every code connected to the assignments. The Makefile file takes
    care of all compiler options so that you only have to execute the following command in the command prompt to generate
    a .img file, which is pre-configured to be rteskernel.img.
-   make run
-   Changing the kernel to be loaded
-   Make sure you read about the RPi configuration files
-   A few files of the Raspberry Pi OS are stored on the MicroSD card. Some of these files contain the actual kernel to
+        * make run
+####  Changing the kernel to be loaded
+ *  Make sure you read about the RPi configuration files
+ *  A few files of the Raspberry Pi OS are stored on the MicroSD card. Some of these files contain the actual kernel to
    be loaded, while others are for configuration.
-   The kernel.img and kernel7.img files are the kernel to be loaded to the boot partition. The kernel.img file is the
+      * The kernel.img and kernel7.img files are the kernel to be loaded to the boot partition. The kernel.img file is the
    default kernel for Pi 1 and Pi Zero, while the kernel7.img is the default for Pi 2 and Pi 3.
-   The configuration file config.txt is used to configure different boot options. Among the options, the kernel option
+      * The configuration file config.txt is used to configure different boot options. Among the options, the kernel option
    indicates the filename on the boot partition when loading the kernel.
-   To indicate that rteskernel.img shall be loaded instead of the default kernel, add a line to config.txt such as:
-   kernel=rteskernel.img
-   Every time you want to load a new kernel, you must ensure the option kernel indicates the kernel to be loaded.
-   Given that the command make run succeeded and that it created a new .img file
-   Copy the new .img file into the MicroSD card.
-   Change the config.txt file in the MicroSD card by changing the value of the property kernel to the new .img file
-   name.
-   Remove the micro SD card from the computer and insert it into the RPi.
-   Power on the RPi.
-   The new kernel shall now execute on the RPi.
-   Preparation 3: Bare-Metal Serial Communication
-   With Raspberry Pi OS, one can communicate with the RPi via traditional I/O devices (i.e., USB keyboard and mouse and
-   screen) or the network. Another approach is to use a TTL USB serial cable.
-   In the assignments, students will exploit a library that enables bi-directional communication between RPi and a PC
-   using the TTL USB serial cable. The library explores serial UART communication using RPi's serial port.
-   Students will need the provided TTL USB serial cable and a serial console software, such as PuTTY, installed on the
-   PC.
-1. Connecting the TTL USB serial cable to the RPi
-   To connect the TTL USB serial cable to the RPi.
-   Connect the black cable (GND groun) to GPIO pin 6.
-   Connect the white cable (TXD transmission communication) to GPIO pin 8
-   Connect the green cable (RXD receiving communication) to GPIO pin 10.
-   DON'T connect the red cable (VCC power) because you will power the RPi using the power supply with the micro-USB
+        * To indicate that rteskernel.img shall be loaded instead of the default kernel, add a line to config.txt such as:
+   `kernel=rteskernel.img`
+        * Every time you want to load a new kernel, you must ensure the option kernel indicates the kernel to be loaded.
+* Given that the command make run succeeded and that it created a new .img file
+   * Copy the new .img file into the MicroSD card.
+   * Change the config.txt file in the MicroSD card by changing the value of the property kernel to the new .img file
+name.
+* Remove the micro SD card from the computer and insert it into the RPi.
+* Power on the RPi.
+* The new kernel shall now execute on the RPi.
+-------------
+### Preparation 3: Bare-Metal Serial Communication
+* With Raspberry Pi OS, one can communicate with the RPi via traditional I/O devices (i.e., USB keyboard and mouse and
+screen) or the network. Another approach is to use a TTL USB serial cable.
+* In the assignments, students will exploit a library that enables bi-directional communication between RPi and a PC
+using the TTL USB serial cable. The library explores serial UART communication using RPi's serial port.
+* Students will need the provided TTL USB serial cable and a serial console software, such as PuTTY, installed on the
+PC.
+#### 1. Connecting the TTL USB serial cable to the RPi
+   * To connect the TTL USB serial cable to the RPi.
+      * Connect the black cable (GND groun) to GPIO pin 6.
+      * Connect the white cable (TXD transmission communication) to GPIO pin 8
+      * Connect the green cable (RXD receiving communication) to GPIO pin 10.
+      * DON'T connect the red cable (VCC power) because you will power the RPi using the power supply with the micro-USB
    cable. You should not have both.
-   On the Pi 3 and 4 the UART is, by default, used for Bluetooth. Thus, you may need to add the following lines to "
-   /boot/config.txt".
-   enable_uart=1
-   dtoverlay=disable-bt
-2. Testing
-   Install a serial console software, such as PuTTY, on the PC.
-   Connect the TTL USB serial cable to the PC.
-   A device driver might be needed.
-   Check which serial port was attributed to the TTL USB serial cable.
-   Execute the installed serial console software
-   Configure the serial line to connect to the TTL USB serial cable serial port using a baud rate (speed) of 115200.
-   Start/open the serial communication session.
-   Copy the attached helloworld.img file into the MicroSD card.
-   Change the value of the property kernel to helloworld.img in the config.txt file in the MicroSD.
-   Remove the micro SD card from the computer and insert it into the RPi.
-   Power on the RPi.
-   The new kernel shall now execute on the RPi.
-   Expected result
-
+   * On the Pi 3 and 4 the UART is, by default, used for Bluetooth. Thus, you may need to add the following lines to "
+   `/boot/config.txt"`.
+      * `enable_uart=1`
+      * `dtoverlay=disable-bt`
+#### 2. Testing
+   1. Install a serial console software, such as PuTTY, on the PC.
+   2. Connect the TTL USB serial cable to the PC.
+       * A device driver might be needed.
+   3. Check which serial port was attributed to the TTL USB serial cable.
+   4. Execute the installed serial console software
+       * Configure the serial line to connect to the TTL USB serial cable serial port using a baud rate (speed) of 115200.
+   5. Start/open the serial communication session.
+   6. Copy the attached `helloworld.img` file into the MicroSD card.
+   7. Change the value of the property kernel to `helloworld.img` in the config.txt file in the MicroSD.
+   8. Remove the micro SD card from the computer and insert it into the RPi.
+   9. Power on the RPi.
+   10. The new kernel shall now execute on the RPi.
+      * Expected result
+      BILD ATT LÄGGA TILL
 -------------
 
 ## Assignment 1 - Part 1 (click to submit results)
