@@ -21,13 +21,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d48a88e7-3145-42a7-af5e-a3ce2e96ea94" name="Changes" comment="k">
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/expstruct.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/expstruct.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/expstruct.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/led.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/led.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/piface.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/piface.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/piface.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-armtimer.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-gpio.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-interrupts.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-systimer.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/startup.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/syscalls.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.elf" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.img" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.img" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.o" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/expstruct.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/expstruct.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/expstruct.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/expstruct.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/expstruct.o" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/expstruct.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/piface.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/piface.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/piface.o" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/piface.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +58,9 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="Make.Settings">
-    <option name="path" value="C:\Program Files (x86)\GnuWin32\bin\make.exe" />
+    <option name="path" value="/usr/local/gcc_arm/gcc-arm-none-eabi-4_7-2013q3/bin/arm-none-eabi-gcc" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -61,24 +78,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.make&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part3/a2p3/lib",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "terminal"
   }
-}</component>
-  <component name="RunManager" selected="Makefile Target.Makefile">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Shell Script.MAKE">
     <configuration name="DT8025" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DT8025" TARGET_NAME="DT8025" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DT8025" RUN_TARGET_NAME="DT8025">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -90,9 +114,25 @@
       </makefile>
       <method v="2" />
     </configuration>
+    <configuration name="MAKE" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="make run" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="false" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="CMake Application.DT8025" />
       <item itemvalue="Makefile Target.Makefile" />
+      <item itemvalue="Shell Script.MAKE" />
     </list>
     <recent_temporary>
       <list>
@@ -116,6 +156,9 @@
       <workItem from="1663316266815" duration="9937000" />
       <workItem from="1663329519288" duration="24000" />
       <workItem from="1663329592597" duration="6411000" />
+      <workItem from="1663702197717" duration="1630000" />
+      <workItem from="1663752193381" duration="460000" />
+      <workItem from="1663752813146" duration="14763000" />
     </task>
     <task id="LOCAL-00001" summary="README updatering">
       <created>1663248046348</created>
