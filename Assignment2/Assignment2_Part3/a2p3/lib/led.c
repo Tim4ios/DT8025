@@ -2,57 +2,67 @@
     Part of the Real-Time Embedded Systems course at Halmstad University
     Wagner Morais on Aug 2022.
  */
-
+ 
 #include "led.h"
-#include "rpi3.h"
-#include "rpi-systimer.h"
-#include "rpi-gpio.h"
+#include "../../../../../../Downloads/a1p2/lib/rpi3.h"
+#include "../../../../../../Downloads/a1p2/lib/rpi-systimer.h"
+#include "../../../../../../Downloads/a1p2/lib/rpi-gpio.h"
 
-//1e6 equals 1 second, declare a double for 0.5 seconds that will be used in delay.
-double halfsecond = (1e6) / 2;
+int LED;
 
-void led_init() {
-    /* Write 1 to the GPIO16 init nibble in the Function Select 1 GPIO
+void led_init(){
+	/* Write 1 to the GPIO16 init nibble in the Function Select 1 GPIO
        peripheral register to enable GPIO16 as an output */
     GPIO->GPFSEL1 |= (1 << 18);
-
+    LED = 0;
 #if defined( RPI3 ) && defined( IOBPLUS )
-    RPI_SetGpioPinFunction(LED_GPIO, FS_OUTPUT);
-#endif
+	RPI_SetGpioPinFunction( LED_GPIO, FS_OUTPUT );
+#endif	
 }
 
-void led_on() {
-    /* Set the GPIO16 output high ( Turn OK LED off )*/
-    GPIO->GPSET0 |= (1 << 16);
-#if defined( RPI3 ) && defined( IOBPLUS )
-    /* Set the ACT LED attached to GPIO29 output high ( Turn OK LED off )
-       Declarations in rpi-gpio.h
-    */
-    GPIO->LED_GPSET |= (1 << LED_GPIO_BIT);
-#endif
+void led_on(){
+	/* Set the GPIO16 output high ( Turn OK LED off )*/
+	GPIO->GPSET0 |= (1 << 16);
+    LED = 1;
+#if defined( RPI3 ) && defined( IOBPLUS )	
+	/* Set the ACT LED attached to GPIO29 output high ( Turn OK LED off )
+	   Declarations in rpi-gpio.h
+	*/
+	GPIO->LED_GPSET |= (1 << LED_GPIO_BIT);
+
+#endif		
 }
 
-void led_off() {
-    /* Set the GPIO16 output high ( Turn OK LED off )*/
-    GPIO->GPCLR0 |= (1 << 16);
-#if defined( RPI3 ) && defined( IOBPLUS )
-    /* Set the ACT LED attached to GPIO29 output high ( Turn OK LED off )
-       Declarations in rpi-gpio.h
-    */
-    GPIO->LED_GPCLR |= (1 << LED_GPIO_BIT);
+void led_off(){
+	/* Set the GPIO16 output high ( Turn OK LED off )*/
+	GPIO->GPCLR0 |= (1 << 16);
+    LED = 0;
+#if defined( RPI3 ) && defined( IOBPLUS )		
+	/* Set the ACT LED attached to GPIO29 output high ( Turn OK LED off )
+	   Declarations in rpi-gpio.h
+	*/
+	GPIO->LED_GPCLR |= (1 << LED_GPIO_BIT);
+
 #endif
+
 }
 
-void led_blink() {
+void led_blink(){
+    led_on();
+    RPI_WaitMicroSeconds(300000);
+    led_off();
+}
 
-    //to be implemented
+void toggle(){
 
-    while (1) {
-        led_on();
-        RPI_WaitMicroSeconds(halfsecond);
+    if(LED){
         led_off();
-        RPI_WaitMicroSeconds(halfsecond);
+    }else{
+        led_on();
     }
 
 
+   //LED ? led_off : led_on; //Doesn't work for some reason
 }
+
+

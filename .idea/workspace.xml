@@ -21,31 +21,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d48a88e7-3145-42a7-af5e-a3ce2e96ea94" name="Changes" comment="k">
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/expstruct.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/expstruct.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/expstruct.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/led.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/led.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/piface.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/piface.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/piface.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-armtimer.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-gpio.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-interrupts.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-systimer.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/startup.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/syscalls.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/a2p3.img" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-armtimer.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-armtimer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-base.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-gpio.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-gpio.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-interrupts.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-interrupts.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-systimer.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-systimer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi3.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi3.ld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/startup.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/syscalls.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.elf" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.img" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.img" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.o" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/expstruct.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/expstruct.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/expstruct.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/expstruct.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/expstruct.o" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/expstruct.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/piface.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/piface.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/piface.o" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/lib/piface.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/expstruct.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/expstruct.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/expstruct.o" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/expstruct.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/led.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/led.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/led.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/led.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/piface.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/piface.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/piface.o" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/piface.o" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +97,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib" />
+      <recent name="$PROJECT_DIR$/Assignment2/Assignment2_Part3" />
     </key>
   </component>
   <component name="RunManager" selected="Shell Script.MAKE">
@@ -158,7 +159,7 @@
       <workItem from="1663329592597" duration="6411000" />
       <workItem from="1663702197717" duration="1630000" />
       <workItem from="1663752193381" duration="460000" />
-      <workItem from="1663752813146" duration="14763000" />
+      <workItem from="1663752813146" duration="30102000" />
     </task>
     <task id="LOCAL-00001" summary="README updatering">
       <created>1663248046348</created>
@@ -216,7 +217,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663329526616</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="k">
+      <created>1664023616558</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664023616571</updated>
+    </task>
+    <task id="LOCAL-00010" summary="k">
+      <created>1664023656933</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1664023656934</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,5 +258,16 @@
     <MESSAGE value="README updatering" />
     <MESSAGE value="k" />
     <option name="LAST_COMMIT_MESSAGE" value="k" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.c</url>
+          <line>9</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

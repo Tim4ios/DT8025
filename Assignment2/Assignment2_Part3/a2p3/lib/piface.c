@@ -128,6 +128,9 @@ static void lcd_pulse(uint8_t val) {
 }
 
 static void lcd_write_cmd(uint8_t cmd) {
+
+    lcd_busy_wait();
+
     /* write high nibble */
     lcd_pulse(LCD_BL | (cmd >> 4));
 

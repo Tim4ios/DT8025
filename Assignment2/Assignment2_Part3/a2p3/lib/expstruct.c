@@ -9,6 +9,7 @@
 
 #include <stdlib.h>
 #include "expstruct.h"
+#include "led.h"
 
 
 //function to calculate a!
@@ -53,13 +54,16 @@ ExpStruct *iexp(int x) {
     double memory = 0;
 
     while(two_dec_pre){
-        RPI_WaitMicroSeconds(30000);
         temp += ppow(x,counter)/fac(counter);
         counter++;
 
         if(memory!= 0 && (temp-memory)<0.001) two_dec_pre = 0;
 
         memory = temp;
+
+        //led_blink();
+        RPI_WaitMicroSeconds(200000);
+        toggle();
     }
 
     e->expInt = temp;
