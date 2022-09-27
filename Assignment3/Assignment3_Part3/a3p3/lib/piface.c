@@ -232,6 +232,31 @@ void piface_clear(void) {
     /* clear display */
 }
 
+void print_at_seg(int seg, int num)
+{
+    char s[] = "Hello";
+    piface_puts(s);
+
+    switch (seg) {
+        case 0 :
+            lcd_write_cmd(0x00);
+            break;
+        case 1:
+            lcd_write_cmd(0x00);
+            break;
+        case 2 :
+            lcd_write_cmd(0xc0);
+            break;
+        case 3 :
+            lcd_write_cmd(0x00);
+            break;
+        default:
+            lcd_write_data(c);
+
+            /* write character */
+    }
+
+}
 
 void print_at_seg(int seg, int num){
     char string[9];

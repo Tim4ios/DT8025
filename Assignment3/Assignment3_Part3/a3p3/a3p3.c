@@ -13,10 +13,10 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-#include "tinythreads.h"
+#include "lib/tinythreads.h"
 #include "rpi3.h"
 #include "piface.h"
-#include "led.h"
+#include "lib/led.h"
 #include "expstruct.h"
 
 #include "rpi-armtimer.h"

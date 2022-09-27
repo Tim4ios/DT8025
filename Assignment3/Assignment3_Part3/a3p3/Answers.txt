@@ -1,0 +1,5 @@
+Compile the code and boot the RPi using the newly created kernel, i.e., a3p3.img.
+Does it work? Create a file called Answers.txt and the explanation for why this new kernel is not working as expected.
+
+Since the thread only have 5 as maximum limit, but calling spawn 6 times it wont work. #define NTHREADS	5.
+Also that we created a switch case, that will return "Invalid segment" if passing higher segment then 3.
