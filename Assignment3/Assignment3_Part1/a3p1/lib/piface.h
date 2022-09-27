@@ -3,7 +3,6 @@
     Copyright (c) 2017, Sebastian Kunze <sebastian.kunze@hh.se>
     All rights reserved.
 */
-
 /*
  * Modified by Wagner Morais on Sep 2022.
  */
@@ -65,7 +64,10 @@ void piface_putc(char c);
 void piface_puts(char s[]);
 void piface_clear();
 
-// void piface_set_cursor(uint8_t col, uint8_t row);
-// void print_at_seg(int seg, int num);
-// void printf_at_seg(int seg, const char* fmt, ...);
+// To be implemented in Assignment 4!!!
+void piface_set_cursor(uint8_t col, uint8_t row);
+// To be implemented in Assignment 4!!!
+void print_at_seg(int seg, int num);
+// Optional
+void printf_at_seg(int seg, const char* fmt, ...);
 #endif
