@@ -5,10 +5,10 @@
 
 
 3. What is the purpose of the function yield?
-• enqueue the current thread at the ready queue
-• pick a new thread from the ready queue
-• update current
-• perform the setjmp(A); longjmp(B) trick to switch contexts – a dispatch
+    • enqueue the current thread at the ready queue
+    • pick a new thread from the ready queue
+    • update current
+    • perform the setjmp(A); longjmp(B) trick to switch contexts – a dispatch
 
 
 4. After finishing the execution of line 3, describe the content of readyQ.
