@@ -545,3 +545,50 @@ The objective of Part 1 is to complete the implementation of a C library for the
 
 -------------
 
+### Assignment 3 - Part 1
+
+Attached Files:
+
+-    [![File](https://learn.content.blackboardcdn.com/3900.48.0-rel.18+c7edfda/images/ci/ng/cal_year_event.gif) a3p1.zip](https://bb.hh.se/bbcswebdav/pid-433498-dt-content-rid-5709121_1/xid-5709121_1) (45.166 KB) 
+
+### Tinythreads
+
+[Tinythreads](http://www.sm.luth.se/csee/courses/smd/138/lab2.html) is a lightweight multi-threading kernel implemented using non-local gotos. In Assignment 3, the original Tinythreads library ([tinythreads.h](http://www.sm.luth.se/csee/courses/d0003e/labs/tinythreads.h) and [tinythreads.c](http://www.sm.luth.se/csee/courses/d0003e/labs/tinythreads.c)) was modified and ported to RPi 3 (ARMv8).
+
+The objective of Part 1 is to understand how Tinythreads library works, including added modifications for the DT8025 course.
+
+#### 1. Understanding Tinythreads
+
+Using the Tinythreads source code (lib/tinythreads.c and lib/tinythreads.h), the [lecture slides](http://www.sm.luth.se/csee/courses/d0003e/12/lectures/lecture4.pdf) from Fredrik Bengtssonslides, and the notes below, make sure you understand setjmp and longjmp and how the Tinythreads library works.
+
+**Obs**: do not underestimate the importance of this part of the assignment.
+
+**Technical notes on the implementation (By Fredrik Bengtsson @ LTU.SE )**
+
+-   _The thread implementation in tinythreads is of the kind to expect in a typical threading library; i.e., the threads share global memory and other resources but use private stacks._ _Execution using alternative stacks is achieved using a small platform-dependent trick in **spawn();** when the newly created thread has had its execution context initialized by **setjmp()** (return value 0), the stored stack-pointer is overwritten with a suitable address within a separate memory block.__The exact location within a **jmp_buf** where the stack-pointer is stored differs between platforms, hence the preprocessor macro **SETSTACK(buf,a)** has to be modified if tinythreads.c is to be moved to the RPi 3 (ARMv8). **Note**: The initial value must be set close to the highest address of the designated memory block, especially on architectures where the stack grows towards lower addresses._
+   -   For Assignment 3, the SETSTACK(buf,a) macro has been modified to work with the RPi 3 (ARMv8).
+
+-   _The key to understanding this thread library is to come to peace with how the use of **setjmp()** and **longjmp()** works._ _You might therefore find it helpful to work through a sequence of **spawn()** and **yield()** calls presented in the [lecture slides](http://www.sm.luth.se/csee/courses/d0003e/12/lectures/lecture4.pdf), and notice how the underlying "thread of execution" jumps from context to context._
+
+-   _Finally, a note on memory management. The stack space for a thread is allocated as part of the control block for that thread, and a fixed amount of thread control blocks are defined in a global array, initially organized as a linked list of free blocks, from which memory can be allocated when a new thread is spawned. For simplicity, allocation and deallocation of thread memory are handled by the same operations that organize queues of threads in other parts of the implementation. However, it should be noted that this is a slight overkill – there is no underlying need to treat the pool of free thread blocks as a queue. The stack spaces and the thread block array are of fixed size, which can be a limiting factor in practice. In the current implementation, execution simply halts if dequeuing is attempted on an empty queue. In contrast, a shortage of stack space will manifest as random memory corruption caused by out-of-bounds memory writes._ 
+    -   _In a production system, a more dynamic memory management scheme would be desirable, preferably coupled with an analysis method to statically predict the memory needs of a set of threads._
+
+#### 2. Download a3p1.zip and uncompress it
+
+#### 3. Adding C libraries
+
+-   Regarding results from Assignments 1 and 2, copy into a3p1/lib/ the following files: 
+    -   piface.*
+-   expstruct.*
+   -   **NOTE**: Use the files from a2p2, i.e., the iexp() function without the LED blinking interleaving. 
+    -   led.*
+   -   **NOTE**: add and implement a function called led_toggle() to toggle the state of the LED, i.e., switch the LED on or off depending on its previous state. 
+
+#### 4. Generating a kernel using Tinythreads
+
+-   The a3p1.c file contains an example of a program executing two tasks concurrently. 
+    -   One task computes and displays the power of a number indefinitely, while the other computes and displays prime numbers indefinitely.  
+    -   Each task is given to a different "thread" to execute; one is spawned while the other is the main thread. 
+-   Compile the code and boot the RPi using the newly created kernel, i.e., a3p1.img. 
+    -   A successful kernel creation and installation shall enable you to visualize on the PiFace Display the outcome of 2 threads executing the power function, similarly to a3p1.expected.img.
+

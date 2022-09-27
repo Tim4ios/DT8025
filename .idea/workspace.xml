@@ -20,29 +20,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d48a88e7-3145-42a7-af5e-a3ce2e96ea94" name="Changes" comment="k">
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/a2p3.img" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-armtimer.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-armtimer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-base.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-gpio.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-gpio.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-interrupts.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-interrupts.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-systimer.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi-systimer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi3.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/rpi3.ld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/startup.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/syscalls.c" afterDir="false" />
+    <list default="true" id="d48a88e7-3145-42a7-af5e-a3ce2e96ea94" name="Changes" comment="s">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.img" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.img" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/expstruct.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/expstruct.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/expstruct.o" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/expstruct.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/led.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/led.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/led.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/led.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/piface.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/piface.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/piface.o" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib/piface.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,30 +55,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part3/a2p3/lib",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "terminal"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part3/a2p3/lib&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Assignment3/Assignment3_Part1" />
       <recent name="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib" />
       <recent name="$PROJECT_DIR$/Assignment2/Assignment2_Part3" />
     </key>
@@ -159,7 +140,10 @@
       <workItem from="1663329592597" duration="6411000" />
       <workItem from="1663702197717" duration="1630000" />
       <workItem from="1663752193381" duration="460000" />
-      <workItem from="1663752813146" duration="30102000" />
+      <workItem from="1663752813146" duration="30183000" />
+      <workItem from="1664227121692" duration="480000" />
+      <workItem from="1664228084705" duration="67000" />
+      <workItem from="1664260106465" duration="486000" />
     </task>
     <task id="LOCAL-00001" summary="README updatering">
       <created>1663248046348</created>
@@ -231,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664023656934</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="k">
+      <created>1664225036517</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1664225036517</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
