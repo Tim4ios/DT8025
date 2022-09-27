@@ -20,11 +20,13 @@
     }
 
 5. After finishing the execution of line 3, describe the content of freeQ.
-    
+    There are four free spots left in the freeQ since one have been moved from freeQ to readyQ.
+    By looking at NTHREADS defined in tinythreads.c we can see there are total of 5 spots/threads.
 
 
 6. Consider the code above and the a3p1.img kernel from Pat 1. Which task executes first? Why?
-
+    ComputePower, because spawn does move the thread into the readyQ.
+    But the first task that will be executed is the ComputePower.
 
 7. As they are, functions computePower and computePrimes execute indefinitely, i.e, never return.
 However, and considering the a3p1.img kernel, these functions are executed concurrently. How?

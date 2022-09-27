@@ -12,6 +12,7 @@
 
 #include <stdio.h>
 #include <stdarg.h>
+#include <processthreadsapi.h>
 
 #include "lib/tinythreads.h"
 #include "lib/rpi3.h"
