@@ -27,7 +27,6 @@
       <change beforePath="$PROJECT_DIR$/Assignment3/Assignment3_Part3/a3p3/a3p3.img" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/Assignment3_Part3/a3p3/a3p3.img" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment3/Assignment3_Part3/a3p3/a3p3.o" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/Assignment3_Part3/a3p3/a3p3.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment3/Assignment3_Part3/a3p3/lib/piface.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/Assignment3_Part3/a3p3/lib/piface.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment3/Assignment3_Part3/a3p3/lib/piface.o" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/Assignment3_Part3/a3p3/lib/piface.o" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664282637951</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="s">
+      <created>1664283370765</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1664283370765</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

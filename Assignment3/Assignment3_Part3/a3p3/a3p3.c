@@ -15,7 +15,7 @@
 
 #include "lib/tinythreads.h"
 #include "rpi3.h"
-#include "piface.h"
+#include "lib/piface.h"
 #include "lib/led.h"
 #include "expstruct.h"
 
@@ -62,7 +62,8 @@ void computePrimes(int seg) {
  */
 void computePower(int seg) {
 	for(int n = 0; ; n++) {
-		PUTTOLDC("T%i: %i^2=%i\n", seg, n, n*n);
+		//PUTTOLDC("T%i: %i^2=%i\n", seg, n, n*n);
+        print_at_seg(seg,n*n);
 		RPI_WaitMicroSeconds(500000); //delay of 0.5s added for visualization purposes!!!
         yield();
     }
@@ -102,8 +103,8 @@ int main() {
     print_at_seg(2,3);
     print_at_seg(3,4);*/
     //print_at_seg(5,7);
-    piface_set_cursor(8,1);
-    piface_putc('a');
-/*	spawn(computePower, 0);
-	computePrimes(1);*/
+    //piface_set_cursor(8,1);
+    //piface_putc('a');
+	spawn(computePower, 0);
+	computePrimes(1);
 }
