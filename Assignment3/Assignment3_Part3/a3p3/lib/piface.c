@@ -271,4 +271,18 @@ void print_at_seg(int seg, int num){
 
 void piface_set_cursor(uint8_t col, uint8_t row){
 
+    switch(row){
+        case 0:
+            if(col<17) {
+                lcd_write_cmd(0x80 | col);
+            }else
+                piface_puts("Invalid column index!");
+            break;
+        case 1:
+
+            break;
+        default:
+            piface_puts("Invalid row index!");
+    }
+
 }
