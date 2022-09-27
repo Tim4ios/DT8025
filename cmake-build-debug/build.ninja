@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/joelpalsson/CLionProjects/DT8025/cmake-build-debug/
+cmake_ninja_workdir = C$:/Users/Johan/CLionProjects/DT8025/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target DT8025
 
@@ -49,154 +49,154 @@ cmake_ninja_workdir = C$:/Users/joelpalsson/CLionProjects/DT8025/cmake-build-deb
 
 build cmake_object_order_depends_target_DT8025: phony || CMakeFiles/DT8025.dir
 
-build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part1/lib/piface.c.obj: C_COMPILER__DT8025_Debug C$:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib/piface.c || cmake_object_order_depends_target_DT8025
+build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part1/lib/piface.c.obj: C_COMPILER__DT8025_Debug C$:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib/piface.c || cmake_object_order_depends_target_DT8025
   DEP_FILE = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part1\lib\piface.c.obj.d
   FLAGS = -g -std=gnu11
-  INCLUDES = -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
+  INCLUDES = -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
   OBJECT_DIR = CMakeFiles\DT8025.dir
   OBJECT_FILE_DIR = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part1\lib
   TARGET_COMPILE_PDB = CMakeFiles\DT8025.dir\
   TARGET_PDB = DT8025.pdb
 
-build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part1/lib/rpi-armtimer.c.obj: C_COMPILER__DT8025_Debug C$:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib/rpi-armtimer.c || cmake_object_order_depends_target_DT8025
+build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part1/lib/rpi-armtimer.c.obj: C_COMPILER__DT8025_Debug C$:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib/rpi-armtimer.c || cmake_object_order_depends_target_DT8025
   DEP_FILE = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part1\lib\rpi-armtimer.c.obj.d
   FLAGS = -g -std=gnu11
-  INCLUDES = -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
+  INCLUDES = -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
   OBJECT_DIR = CMakeFiles\DT8025.dir
   OBJECT_FILE_DIR = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part1\lib
   TARGET_COMPILE_PDB = CMakeFiles\DT8025.dir\
   TARGET_PDB = DT8025.pdb
 
-build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part1/lib/rpi-gpio.c.obj: C_COMPILER__DT8025_Debug C$:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib/rpi-gpio.c || cmake_object_order_depends_target_DT8025
+build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part1/lib/rpi-gpio.c.obj: C_COMPILER__DT8025_Debug C$:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib/rpi-gpio.c || cmake_object_order_depends_target_DT8025
   DEP_FILE = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part1\lib\rpi-gpio.c.obj.d
   FLAGS = -g -std=gnu11
-  INCLUDES = -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
+  INCLUDES = -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
   OBJECT_DIR = CMakeFiles\DT8025.dir
   OBJECT_FILE_DIR = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part1\lib
   TARGET_COMPILE_PDB = CMakeFiles\DT8025.dir\
   TARGET_PDB = DT8025.pdb
 
-build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part1/lib/rpi-interrupts.c.obj: C_COMPILER__DT8025_Debug C$:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib/rpi-interrupts.c || cmake_object_order_depends_target_DT8025
+build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part1/lib/rpi-interrupts.c.obj: C_COMPILER__DT8025_Debug C$:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib/rpi-interrupts.c || cmake_object_order_depends_target_DT8025
   DEP_FILE = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part1\lib\rpi-interrupts.c.obj.d
   FLAGS = -g -std=gnu11
-  INCLUDES = -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
+  INCLUDES = -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
   OBJECT_DIR = CMakeFiles\DT8025.dir
   OBJECT_FILE_DIR = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part1\lib
   TARGET_COMPILE_PDB = CMakeFiles\DT8025.dir\
   TARGET_PDB = DT8025.pdb
 
-build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part1/lib/rpi-systimer.c.obj: C_COMPILER__DT8025_Debug C$:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib/rpi-systimer.c || cmake_object_order_depends_target_DT8025
+build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part1/lib/rpi-systimer.c.obj: C_COMPILER__DT8025_Debug C$:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib/rpi-systimer.c || cmake_object_order_depends_target_DT8025
   DEP_FILE = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part1\lib\rpi-systimer.c.obj.d
   FLAGS = -g -std=gnu11
-  INCLUDES = -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
+  INCLUDES = -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
   OBJECT_DIR = CMakeFiles\DT8025.dir
   OBJECT_FILE_DIR = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part1\lib
   TARGET_COMPILE_PDB = CMakeFiles\DT8025.dir\
   TARGET_PDB = DT8025.pdb
 
-build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part1/lib/startup.c.obj: C_COMPILER__DT8025_Debug C$:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib/startup.c || cmake_object_order_depends_target_DT8025
+build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part1/lib/startup.c.obj: C_COMPILER__DT8025_Debug C$:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib/startup.c || cmake_object_order_depends_target_DT8025
   DEP_FILE = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part1\lib\startup.c.obj.d
   FLAGS = -g -std=gnu11
-  INCLUDES = -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
+  INCLUDES = -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
   OBJECT_DIR = CMakeFiles\DT8025.dir
   OBJECT_FILE_DIR = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part1\lib
   TARGET_COMPILE_PDB = CMakeFiles\DT8025.dir\
   TARGET_PDB = DT8025.pdb
 
-build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part1/lib/syscalls.c.obj: C_COMPILER__DT8025_Debug C$:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib/syscalls.c || cmake_object_order_depends_target_DT8025
+build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part1/lib/syscalls.c.obj: C_COMPILER__DT8025_Debug C$:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib/syscalls.c || cmake_object_order_depends_target_DT8025
   DEP_FILE = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part1\lib\syscalls.c.obj.d
   FLAGS = -g -std=gnu11
-  INCLUDES = -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
+  INCLUDES = -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
   OBJECT_DIR = CMakeFiles\DT8025.dir
   OBJECT_FILE_DIR = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part1\lib
   TARGET_COMPILE_PDB = CMakeFiles\DT8025.dir\
   TARGET_PDB = DT8025.pdb
 
-build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part1/a2p1.c.obj: C_COMPILER__DT8025_Debug C$:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/a2p1.c || cmake_object_order_depends_target_DT8025
+build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part1/a2p1.c.obj: C_COMPILER__DT8025_Debug C$:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/a2p1.c || cmake_object_order_depends_target_DT8025
   DEP_FILE = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part1\a2p1.c.obj.d
   FLAGS = -g -std=gnu11
-  INCLUDES = -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
+  INCLUDES = -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
   OBJECT_DIR = CMakeFiles\DT8025.dir
   OBJECT_FILE_DIR = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part1
   TARGET_COMPILE_PDB = CMakeFiles\DT8025.dir\
   TARGET_PDB = DT8025.pdb
 
-build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part2/Assigment2part2/lib/expstruct.c.obj: C_COMPILER__DT8025_Debug C$:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib/expstruct.c || cmake_object_order_depends_target_DT8025
+build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part2/Assigment2part2/lib/expstruct.c.obj: C_COMPILER__DT8025_Debug C$:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib/expstruct.c || cmake_object_order_depends_target_DT8025
   DEP_FILE = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part2\Assigment2part2\lib\expstruct.c.obj.d
   FLAGS = -g -std=gnu11
-  INCLUDES = -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
+  INCLUDES = -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
   OBJECT_DIR = CMakeFiles\DT8025.dir
   OBJECT_FILE_DIR = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part2\Assigment2part2\lib
   TARGET_COMPILE_PDB = CMakeFiles\DT8025.dir\
   TARGET_PDB = DT8025.pdb
 
-build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part2/Assigment2part2/lib/piface.c.obj: C_COMPILER__DT8025_Debug C$:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib/piface.c || cmake_object_order_depends_target_DT8025
+build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part2/Assigment2part2/lib/piface.c.obj: C_COMPILER__DT8025_Debug C$:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib/piface.c || cmake_object_order_depends_target_DT8025
   DEP_FILE = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part2\Assigment2part2\lib\piface.c.obj.d
   FLAGS = -g -std=gnu11
-  INCLUDES = -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
+  INCLUDES = -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
   OBJECT_DIR = CMakeFiles\DT8025.dir
   OBJECT_FILE_DIR = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part2\Assigment2part2\lib
   TARGET_COMPILE_PDB = CMakeFiles\DT8025.dir\
   TARGET_PDB = DT8025.pdb
 
-build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part2/Assigment2part2/lib/rpi-armtimer.c.obj: C_COMPILER__DT8025_Debug C$:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib/rpi-armtimer.c || cmake_object_order_depends_target_DT8025
+build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part2/Assigment2part2/lib/rpi-armtimer.c.obj: C_COMPILER__DT8025_Debug C$:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib/rpi-armtimer.c || cmake_object_order_depends_target_DT8025
   DEP_FILE = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part2\Assigment2part2\lib\rpi-armtimer.c.obj.d
   FLAGS = -g -std=gnu11
-  INCLUDES = -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
+  INCLUDES = -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
   OBJECT_DIR = CMakeFiles\DT8025.dir
   OBJECT_FILE_DIR = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part2\Assigment2part2\lib
   TARGET_COMPILE_PDB = CMakeFiles\DT8025.dir\
   TARGET_PDB = DT8025.pdb
 
-build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part2/Assigment2part2/lib/rpi-gpio.c.obj: C_COMPILER__DT8025_Debug C$:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib/rpi-gpio.c || cmake_object_order_depends_target_DT8025
+build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part2/Assigment2part2/lib/rpi-gpio.c.obj: C_COMPILER__DT8025_Debug C$:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib/rpi-gpio.c || cmake_object_order_depends_target_DT8025
   DEP_FILE = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part2\Assigment2part2\lib\rpi-gpio.c.obj.d
   FLAGS = -g -std=gnu11
-  INCLUDES = -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
+  INCLUDES = -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
   OBJECT_DIR = CMakeFiles\DT8025.dir
   OBJECT_FILE_DIR = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part2\Assigment2part2\lib
   TARGET_COMPILE_PDB = CMakeFiles\DT8025.dir\
   TARGET_PDB = DT8025.pdb
 
-build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part2/Assigment2part2/lib/rpi-interrupts.c.obj: C_COMPILER__DT8025_Debug C$:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib/rpi-interrupts.c || cmake_object_order_depends_target_DT8025
+build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part2/Assigment2part2/lib/rpi-interrupts.c.obj: C_COMPILER__DT8025_Debug C$:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib/rpi-interrupts.c || cmake_object_order_depends_target_DT8025
   DEP_FILE = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part2\Assigment2part2\lib\rpi-interrupts.c.obj.d
   FLAGS = -g -std=gnu11
-  INCLUDES = -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
+  INCLUDES = -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
   OBJECT_DIR = CMakeFiles\DT8025.dir
   OBJECT_FILE_DIR = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part2\Assigment2part2\lib
   TARGET_COMPILE_PDB = CMakeFiles\DT8025.dir\
   TARGET_PDB = DT8025.pdb
 
-build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part2/Assigment2part2/lib/rpi-systimer.c.obj: C_COMPILER__DT8025_Debug C$:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib/rpi-systimer.c || cmake_object_order_depends_target_DT8025
+build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part2/Assigment2part2/lib/rpi-systimer.c.obj: C_COMPILER__DT8025_Debug C$:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib/rpi-systimer.c || cmake_object_order_depends_target_DT8025
   DEP_FILE = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part2\Assigment2part2\lib\rpi-systimer.c.obj.d
   FLAGS = -g -std=gnu11
-  INCLUDES = -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
+  INCLUDES = -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
   OBJECT_DIR = CMakeFiles\DT8025.dir
   OBJECT_FILE_DIR = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part2\Assigment2part2\lib
   TARGET_COMPILE_PDB = CMakeFiles\DT8025.dir\
   TARGET_PDB = DT8025.pdb
 
-build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part2/Assigment2part2/lib/startup.c.obj: C_COMPILER__DT8025_Debug C$:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib/startup.c || cmake_object_order_depends_target_DT8025
+build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part2/Assigment2part2/lib/startup.c.obj: C_COMPILER__DT8025_Debug C$:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib/startup.c || cmake_object_order_depends_target_DT8025
   DEP_FILE = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part2\Assigment2part2\lib\startup.c.obj.d
   FLAGS = -g -std=gnu11
-  INCLUDES = -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
+  INCLUDES = -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
   OBJECT_DIR = CMakeFiles\DT8025.dir
   OBJECT_FILE_DIR = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part2\Assigment2part2\lib
   TARGET_COMPILE_PDB = CMakeFiles\DT8025.dir\
   TARGET_PDB = DT8025.pdb
 
-build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part2/Assigment2part2/lib/syscalls.c.obj: C_COMPILER__DT8025_Debug C$:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib/syscalls.c || cmake_object_order_depends_target_DT8025
+build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part2/Assigment2part2/lib/syscalls.c.obj: C_COMPILER__DT8025_Debug C$:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib/syscalls.c || cmake_object_order_depends_target_DT8025
   DEP_FILE = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part2\Assigment2part2\lib\syscalls.c.obj.d
   FLAGS = -g -std=gnu11
-  INCLUDES = -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
+  INCLUDES = -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
   OBJECT_DIR = CMakeFiles\DT8025.dir
   OBJECT_FILE_DIR = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part2\Assigment2part2\lib
   TARGET_COMPILE_PDB = CMakeFiles\DT8025.dir\
   TARGET_PDB = DT8025.pdb
 
-build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.c.obj: C_COMPILER__DT8025_Debug C$:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.c || cmake_object_order_depends_target_DT8025
+build CMakeFiles/DT8025.dir/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.c.obj: C_COMPILER__DT8025_Debug C$:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.c || cmake_object_order_depends_target_DT8025
   DEP_FILE = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part2\Assigment2part2\a2p2.c.obj.d
   FLAGS = -g -std=gnu11
-  INCLUDES = -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/joelpalsson/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
+  INCLUDES = -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part1/lib -IC:/Users/Johan/CLionProjects/DT8025/Assignment2/Assignment2_Part2/Assigment2part2/lib
   OBJECT_DIR = CMakeFiles\DT8025.dir
   OBJECT_FILE_DIR = CMakeFiles\DT8025.dir\Assignment2\Assignment2_Part2\Assigment2part2
   TARGET_COMPILE_PDB = CMakeFiles\DT8025.dir\
@@ -226,7 +226,7 @@ build DT8025.exe: C_EXECUTABLE_LINKER__DT8025_Debug CMakeFiles/DT8025.dir/Assign
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\joelpalsson\CLionProjects\DT8025\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\Johan\CLionProjects\DT8025\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -237,7 +237,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\joelpalsson\CLionProjects\DT8025\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\joelpalsson\CLionProjects\DT8025 -BC:\Users\joelpalsson\CLionProjects\DT8025\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Johan\CLionProjects\DT8025\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Johan\CLionProjects\DT8025 -BC:\Users\Johan\CLionProjects\DT8025\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -255,7 +255,7 @@ build DT8025: phony DT8025.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/joelpalsson/CLionProjects/DT8025/cmake-build-debug
+# Folder: C:/Users/Johan/CLionProjects/DT8025/cmake-build-debug
 
 build all: phony DT8025.exe
 
