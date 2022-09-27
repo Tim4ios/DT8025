@@ -232,3 +232,43 @@ void piface_clear(void) {
     /* clear display */
 }
 
+
+void print_at_seg(int seg, int num){
+    char string[9];
+    sprintf(string,"T%d: %d",seg,num);
+    //We have 4 segments locations of the cursor: 0 0x60? 0xc0 0x120?
+    switch (seg) {
+        case 0:
+            //Print at index 0
+            lcd_write_cmd(0x00);
+            piface_puts(string);
+            break;
+        case 1:
+            //base command is 0x80
+            lcd_write_cmd(0x88);
+            piface_puts(string);
+            break;
+        case 2:
+            //Print at first index at on the next line
+            lcd_write_cmd(0xc0);
+            piface_puts(string);
+            break;
+        case 3:
+              lcd_write_cmd(0xc8);
+              piface_puts(string);
+            break;
+        default:
+
+           /* for(int i=0; i<28;i++){
+                sprintf(string,"%d",i);
+                lcd_write_cmd(i);
+                piface_puts(string);
+                RPI_WaitMicroSeconds(2000000);
+            }*/
+            piface_puts("Invalid segment index!");
+    }
+}
+
+void piface_set_cursor(uint8_t col, uint8_t row){
+
+}

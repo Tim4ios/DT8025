@@ -97,7 +97,12 @@ int main() {
 	piface_puts("DT8025 - A3P1");
 	RPI_WaitMicroSeconds(2000000);	
 	piface_clear();
+    /*print_at_seg(0,1);
+    print_at_seg(1,2);
+    print_at_seg(2,3);
+    print_at_seg(3,4);*/
+    //print_at_seg(5,7);
 
-	spawn(computePower, 0);
-	computePrimes(1);
+/*	spawn(computePower, 0);
+	computePrimes(1);*/
 }

@@ -66,6 +66,6 @@ void piface_puts(char s[]);
 void piface_clear();
 
 // void piface_set_cursor(uint8_t col, uint8_t row);
-// void print_at_seg(int seg, int num);
+void print_at_seg(int seg, int num);
 // void printf_at_seg(int seg, const char* fmt, ...);
 #endif
