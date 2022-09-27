@@ -273,13 +273,16 @@ void piface_set_cursor(uint8_t col, uint8_t row){
 
     switch(row){
         case 0:
-            if(col<17) {
+            if(col<16==col>=0) {
                 lcd_write_cmd(0x80 | col);
             }else
                 piface_puts("Invalid column index!");
             break;
         case 1:
-
+            if(col<16==col>=0) {
+                lcd_write_cmd(0xC0 | col);
+            }else
+                piface_puts("Invalid column index!");
             break;
         default:
             piface_puts("Invalid row index!");
