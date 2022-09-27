@@ -17,7 +17,7 @@
 #include "rpi3.h"
 #include "piface.h"
 #include "led.h"
-#include "expstruct.h"
+#include "lib/expstruct.h"
 
 #include "rpi-armtimer.h"
 #include "rpi-systimer.h"
