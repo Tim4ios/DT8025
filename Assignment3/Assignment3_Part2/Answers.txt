@@ -1,20 +1,26 @@
 1. What is the purpose of the function spawn?
-
+    Creates a thread block and make sure it's initiated, gives it a start routine.
 
 2. What is the purpose of the function dispatch?
-
+    As the name suggests it dispatches the given thread.
+    First it check if it is null or empty then uses longjmp to finnish off the thread.
 
 3. What is the purpose of the function yield?
-    • enqueue the current thread at the ready queue
-    • pick a new thread from the ready queue
-    • update current
-    • perform the setjmp(A); longjmp(B) trick to switch contexts – a dispatch
-
+    Enqueues the current thread from the ready queue, updates current.
+    Does the context switching/dispatch.
 
 4. After finishing the execution of line 3, describe the content of readyQ.
+    newp = newThread
+    readyQ[] = {newThread};
 
+    newThread{
+    fun = computePower
+    arg = 0
+    context =
+    }
 
 5. After finishing the execution of line 3, describe the content of freeQ.
+    
 
 
 6. Consider the code above and the a3p1.img kernel from Pat 1. Which task executes first? Why?

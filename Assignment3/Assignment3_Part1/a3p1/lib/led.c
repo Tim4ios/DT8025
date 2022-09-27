@@ -53,7 +53,7 @@ void led_blink(){
     led_off();
 }
 
-void led_toggle(){
+void toggle(){
 
     if(LED){
         led_off();

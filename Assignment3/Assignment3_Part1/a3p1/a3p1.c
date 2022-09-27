@@ -36,7 +36,7 @@
  */
 int is_prime(int i) {
     // To be implemented!!!
-    if (i <= 1) return 0;
+    if (i < 1) return 0;
     if (i % 2 == 0 && i > 2) return 0;
     for(int j = 3; j < i / 2; j+= 2)
         if (i % j == 0)

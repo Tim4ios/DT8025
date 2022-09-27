@@ -4,7 +4,7 @@
 MAINFILE = a3p1
 
 OBJS	=  lib/expstruct.o lib/piface.o lib/led.o
-OBJS	+= lib/rpi-armtimer.o lib/rpi-gpio.o lib/rpi-interrupts.o lib/rpi-systimer.o
+OBJS	+= lib/uart.o lib/rpi-armtimer.o lib/rpi-gpio.o lib/rpi-interrupts.o lib/rpi-systimer.o
 OBJS	+= lib/tinythreads.o 
 
 OBJS	+= lib/startup.o lib/syscalls.o 
