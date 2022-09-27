@@ -20,9 +20,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d48a88e7-3145-42a7-af5e-a3ce2e96ea94" name="Changes" comment="s">
+    <list default="true" id="d48a88e7-3145-42a7-af5e-a3ce2e96ea94" name="Changes" comment="k">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment3/Assignment3_Part1/a3p1/a3p1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/Assignment3_Part1/a3p1/a3p1.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment3/Assignment3_Part2/Answers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/Assignment3_Part2/Answers.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -237,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664262900716</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="k">
+      <created>1664274732273</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1664274732273</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,9 +268,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="README updatering" />
-    <MESSAGE value="k" />
     <MESSAGE value="s" />
-    <option name="LAST_COMMIT_MESSAGE" value="s" />
+    <MESSAGE value="k" />
+    <option name="LAST_COMMIT_MESSAGE" value="k" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
