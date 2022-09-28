@@ -194,26 +194,21 @@ uint8_t piface_getc(void) {
 /** @brief Writes a character
  */
 void piface_putc(char c) {
+//Maybe only write data as lcd_write_data(c)
+    lcd_write_data(c);
 
-    switch (c) {
-        case '\n' :
-            lcd_write_cmd(0xc0);
-            break;
-        default:
-            lcd_write_data(c);
-
-            /* write character */
-    }
-    //RPI_WaitMicroSeconds(sec);
+    /* write character */
 }
+//RPI_WaitMicroSeconds(sec);
+
 
 /** @brief Writes a string
  */
 void piface_puts(char s[]) {
     size_t l = strlen(s);
     for (size_t i = 0; i < l; i++) {
-        if (i == 16 && !(strstr(s, "\n")))
-            lcd_write_cmd(0xc0);
+        //if (i == 16 && !(strstr(s, "\n")))
+        //lcd_write_cmd(0xc0);
         piface_putc(s[i]);
     }
 
@@ -273,6 +268,7 @@ void print_at_seg(int seg, int num) {
 }
 
 void piface_set_cursor(uint8_t col, uint8_t row) {
+    lcd_write_cmd(0x02);
 
     switch (row) {
         case 0:

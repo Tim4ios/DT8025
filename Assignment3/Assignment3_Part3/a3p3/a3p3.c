@@ -49,10 +49,7 @@ int is_prime(int i) {
  */
 void toggle_led(int seg) {
     while (1) {
-        //yield();
-        //toggle();
-        led_blink();
-        RPI_WaitMicroSeconds(500000);
+        toggle();
         yield();
     }
 }
@@ -112,19 +109,25 @@ void computePower(int seg) {
 void computeExponential(int seg) {
     //It will compute and display the result of the iexp function in a particular segment in the LED
     ExpStruct *value;
+    int i;
+    while (1) {
 
-    for (int i = 1; i < 21; ++i) {
-        value = iexp(i);
-        if (seg % 2) {
-            print_at_seg(seg, value->expFraction);
-            //sprintf(str,"%d: %d", i, value->expFraction);
-        } else {
-            print_at_seg(seg, value->expInt);
-            // sprintf(str,"%d: %d", i, value->expInt);
+        for (i = 0; i < 21; ++i) {
+            value = iexp(i);
+
+            if (seg % 2) {
+                print_at_seg(seg, value->expFraction);
+                //sprintf(str,"%d: %d", i, value->expFraction);
+            } else {
+                print_at_seg(seg, value->expInt);
+                // sprintf(str,"%d: %d", i, value->expInt);
+            }
+
+            RPI_WaitMicroSeconds(500000);
+            free(value);
+            yield();
         }
-
-        RPI_WaitMicroSeconds(500000);
-        yield();
+        piface_clear();
     }
 
 

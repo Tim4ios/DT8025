@@ -17,6 +17,7 @@
 #include "rpi-interrupts.h"
 #include "uart.h"
 #include "piface.h"
+#include "rpi-systimer.h"
 
 __attribute__(( always_inline )) static inline void enable() {
     __asm volatile("cpsie i \n"); //AIF

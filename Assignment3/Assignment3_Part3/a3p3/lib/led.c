@@ -4,11 +4,12 @@
  */
  
 #include "led.h"
-#include "../../../../../../Downloads/a1p2/lib/rpi3.h"
-#include "../../../../../../Downloads/a1p2/lib/rpi-systimer.h"
-#include "../../../../../../Downloads/a1p2/lib/rpi-gpio.h"
+#include "rpi3.h"
+#include "rpi-systimer.h"
+#include "rpi-gpio.h"
+#include "rpi-systimer.h"
 
-int LED;
+volatile unsigned int LED;
 
 void led_init(){
 	/* Write 1 to the GPIO16 init nibble in the Function Select 1 GPIO
