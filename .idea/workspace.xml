@@ -22,11 +22,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d48a88e7-3145-42a7-af5e-a3ce2e96ea94" name="Changes" comment="s">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment3/Assignment3_Part3/a3p3/a3p1.img" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment3/Assignment3_Part3/a3p3/a3p3.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/Assignment3_Part3/a3p3/a3p3.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment3/Assignment3_Part3/a3p3/a3p3.elf" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/Assignment3_Part3/a3p3/a3p3.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment3/Assignment3_Part3/a3p3/a3p3.img" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/Assignment3_Part3/a3p3/a3p3.img" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment3/Assignment3_Part3/a3p3/a3p3.o" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/Assignment3_Part3/a3p3/a3p3.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment3/Assignment3_Part3/a3p3/lib/piface.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/Assignment3_Part3/a3p3/lib/piface.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment3/Assignment3_Part3/a3p3/lib/piface.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment3/Assignment3_Part3/a3p3/lib/piface.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664283370765</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="s">
+      <created>1664283977403</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1664283977403</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

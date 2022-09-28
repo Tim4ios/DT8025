@@ -17,7 +17,7 @@
 #include "rpi3.h"
 #include "lib/piface.h"
 #include "lib/led.h"
-#include "expstruct.h"
+#include "lib/expstruct.h"
 
 #include "rpi-armtimer.h"
 #include "rpi-systimer.h"
@@ -44,14 +44,41 @@ int is_prime(int i) {
     return 1;
 }
 
+/** @brief Toggle the state of the LED.
+  * @param int seg Is the segment, i.e., 0: top left, 1:top right, 2: bottom left and 3: bottom right.
+ */
+void toggle_led(int seg) {
+    int col=0;
+    int row=0;
+    //If seg is 0 then 0,0, 1 then 1,0, 2 then 0,1, 3 then 1,1
+    switch (seg) {
+        case 1:
+            col=1;
+            break;
+        case 2:
+            row=1;
+            break;
+        case 3:
+            col = 1;
+            row = 1;
+            break;
+        default:
+            break;
+    }
+    piface_set_cursor(col,row);
+}
+
 /** @brief For all positive integers, displays prime numbers in a given segment 
  *  @param int seg Is the segment, i.e., 0: top left, 1:top right, 2: bottom left and 3: bottom right.
  */
 void computePrimes(int seg) {
     for(int n = 0; ; n++) {  
         if (is_prime(n)) {
-            PUTTOLDC("T%i: Prime %i\n", seg, n);
-			RPI_WaitMicroSeconds(500000); //delay of 0.5s added for visualization purposes!!!
+            //PUTTOLDC("T%i: Prime %i\n", seg, n);
+
+            print_at_seg(seg,n);
+            RPI_WaitMicroSeconds(500000); //delay of 0.5s added for visualization purposes!!!
+
             yield();
         }
     }
@@ -74,20 +101,27 @@ void computePower(int seg) {
   * @param int seg Is the segment, i.e., 0: top left, 1:top right, 2: bottom left and 3: bottom right.
  */
 void computeExponential(int seg) {
-	char str[32];
+    //It will compute and display the result of the iexp function in a particular segment in the LED
+    char *str = malloc(32 * sizeof(char));
 	ExpStruct* value;
-    int n; 
-    while (1) {
-	}
+    for (int i = 1; i < 21; ++i) {
+        value = iexp(i);
+        piface_clear();
+
+        if(seg%2) {
+            print_at_seg(seg,value->expFraction);
+            //sprintf(str,"%d: %d", i, value->expFraction);
+        }else
+            print_at_seg(seg,value->expInt);
+           // sprintf(str,"%d: %d", i, value->expInt);
+
+
+        free(value);
+    }
+
 }
 
-/** @brief Toggle the state of the LED.  
-  * @param int seg Is the segment, i.e., 0: top left, 1:top right, 2: bottom left and 3: bottom right.
- */
-void toggle_led(int seg) {
-	while (1) {
-	}
-}
+
 
 int main() {
 	led_init();
@@ -95,7 +129,7 @@ int main() {
 	piface_init();
 	piface_clear();
 	
-	piface_puts("DT8025 - A3P1");
+	piface_puts("DT8025 - A3P3");
 	RPI_WaitMicroSeconds(2000000);	
 	piface_clear();
     /*print_at_seg(0,1);
@@ -107,4 +141,6 @@ int main() {
     //piface_putc('a');
 	spawn(computePower, 0);
 	computePrimes(1);
+
+   // computeExponential(3);
 }
