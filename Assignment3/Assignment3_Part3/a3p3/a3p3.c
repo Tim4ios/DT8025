@@ -48,15 +48,10 @@ int is_prime(int i) {
   * @param int seg Is the segment, i.e., 0: top left, 1:top right, 2: bottom left and 3: bottom right.
  */
 void toggle_led(int seg) {
-    int temp=0;
     while(1) {
-        if(temp==seg){
-            RPI_WaitMicroSeconds(500000);
-            toggle();
-            temp=0;
-        }
         yield();
-        temp++;
+        RPI_WaitMicroSeconds(500000);
+        toggle();
     }
 }
 
