@@ -3,5 +3,5 @@ Compile the code and boot the RPi using the newly created kernel, i.e., a3p3.img
 Does it work? Create a file called Answers.txt and the explanation for why this new kernel is not working as expected.
 
 Answer:
-No, it does not work. Since the thread only has 5as the maximum limit, calling spawn 6 times won't work. #define NTHREADS	5.
+No, it does not work. Since the thread only has 5 set as the maximum limit, calling spawn 6 times won't work. #define NTHREADS	5.
 Also that we created a switch case that will return "Invalid segment" if passing a higher segment than 3. (Quadrants)
