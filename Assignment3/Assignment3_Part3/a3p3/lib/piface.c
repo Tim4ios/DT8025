@@ -233,32 +233,31 @@ void piface_clear(void) {
 
 
 void print_at_seg(int seg, int num) {
-    char string[8];
-    sprintf(string, "S%d:%d", seg, num);
-
+    char string[9];
+    sprintf(string, "S%d: %d", seg, num);
     //We have 4 segments locations of the cursor: 0 0x60? 0xc0 0x120?
     switch (seg) {
         case 0:
             //Print at index 0
-            piface_set_cursor(0, 0);
             //lcd_write_cmd(0x00);
+            piface_set_cursor(0, 0);
             piface_puts(string);
             break;
         case 1:
             //base command is 0x80
-            piface_set_cursor(8, 0);
             //lcd_write_cmd(0x88);
+            piface_set_cursor(8, 0);
             piface_puts(string);
             break;
         case 2:
             //Print at first index at on the next line
-            piface_set_cursor(0, 1);
             //lcd_write_cmd(0xc0);
+            piface_set_cursor(0, 1);
             piface_puts(string);
             break;
         case 3:
-            piface_set_cursor(8, 1);
             //lcd_write_cmd(0xc8);
+            piface_set_cursor(8, 1);
             piface_puts(string);
             break;
         default:

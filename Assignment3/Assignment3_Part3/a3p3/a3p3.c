@@ -4,7 +4,7 @@
  * Updated by Wagner Morais and Hazem Ali on 20/09/21.
  * Updated by Wagner Morais on Sept 22.
 */
-  
+
 #include <string.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -14,13 +14,13 @@
 #include <stdarg.h>
 
 #include "lib/tinythreads.h"
-#include "rpi3.h"
+#include "lib/rpi3.h"
 #include "lib/piface.h"
 #include "lib/led.h"
 #include "lib/expstruct.h"
 
 #include "rpi-armtimer.h"
-#include "rpi-systimer.h"
+#include "lib/rpi-systimer.h"
 #include "rpi-interrupts.h"
 
 /** @brief Checks whether the input parameter is divisible by itself and 1, i.e, if the input parameter is prime.
@@ -38,7 +38,7 @@ int is_prime(int i) {
     // To be implemented!!!
     if (i <= 1) return 0;
     if (i % 2 == 0 && i > 2) return 0;
-    for(int j = 3; j < i / 2; j+= 2)
+    for (int j = 3; j < i / 2; j += 2)
         if (i % j == 0)
             return 0;
     return 1;
@@ -48,9 +48,8 @@ int is_prime(int i) {
   * @param int seg Is the segment, i.e., 0: top left, 1:top right, 2: bottom left and 3: bottom right.
  */
 void toggle_led(int seg) {
-    while(1) {
-
-
+    while (1) {
+        //yield();
         //toggle();
         led_blink();
         RPI_WaitMicroSeconds(500000);
@@ -58,19 +57,16 @@ void toggle_led(int seg) {
     }
 }
 
-
-
-
 void toggle_piface(int seg) {
-    int col=0;
-    int row=0;
+    int col = 0;
+    int row = 0;
     //If seg is 0 then 0,0, 1 then 1,0, 2 then 0,1, 3 then 1,1
     switch (seg) {
         case 1:
-            col=1;
+            col = 1;
             break;
         case 2:
-            row=1;
+            row = 1;
             break;
         case 3:
             col = 1;
@@ -79,7 +75,7 @@ void toggle_piface(int seg) {
         default:
             break;
     }
-    piface_set_cursor(col,row);
+    piface_set_cursor(col, row);
 
 }
 
@@ -87,10 +83,10 @@ void toggle_piface(int seg) {
  *  @param int seg Is the segment, i.e., 0: top left, 1:top right, 2: bottom left and 3: bottom right.
  */
 void computePrimes(int seg) {
-    for(int n = 0; ; n++) {  
+    for (int n = 0;; n++) {
         if (is_prime(n)) {
             //PUTTOLDC("T%i: Prime %i\n", seg, n);
-            print_at_seg(seg,n);
+            print_at_seg(seg, n);
             RPI_WaitMicroSeconds(500000); //delay of 0.5s added for visualization purposes!!!
             yield();
         }
@@ -101,10 +97,10 @@ void computePrimes(int seg) {
   * @param int seg Is the segment, i.e., 0: top left, 1:top right, 2: bottom left and 3: bottom right.
  */
 void computePower(int seg) {
-	for(int n = 0; ; n++) {
-		//PUTTOLDC("T%i: %i^2=%i\n", seg, n, n*n);
-        print_at_seg(seg,n*n);
-		RPI_WaitMicroSeconds(500000); //delay of 0.5s added for visualization purposes!!!
+    for (int n = 0;; n++) {
+        //PUTTOLDC("T%i: %i^2=%i\n", seg, n, n*n);
+        print_at_seg(seg, n * n);
+        RPI_WaitMicroSeconds(500000); //delay of 0.5s added for visualization purposes!!!
         yield();
     }
 }
@@ -115,29 +111,24 @@ void computePower(int seg) {
  */
 void computeExponential(int seg) {
     //It will compute and display the result of the iexp function in a particular segment in the LED
-	ExpStruct* value;
+    ExpStruct *value;
 
-        for (int i = 1; i < 21; ++i) {
-            value = iexp(i);
-            if (seg==1||seg==3) {
-                print_at_seg(seg, value->expFraction);
-                //sprintf(str,"%d: %d", i, value->expFraction);
-            } else if(seg==0||seg==2){
-                print_at_seg(seg, value->expInt);
-                // sprintf(str,"%d: %d", i, value->expInt);
-            }else{
-                piface_puts("Seg faulty at computeExponential!");
-                RPI_WaitMicroSeconds(1000000000);
-            }
-
-            RPI_WaitMicroSeconds(500000);
-            yield();
+    for (int i = 1; i < 21; ++i) {
+        value = iexp(i);
+        if (seg % 2) {
+            print_at_seg(seg, value->expFraction);
+            //sprintf(str,"%d: %d", i, value->expFraction);
+        } else {
+            print_at_seg(seg, value->expInt);
+            // sprintf(str,"%d: %d", i, value->expInt);
         }
 
+        RPI_WaitMicroSeconds(500000);
+        yield();
+    }
 
 
 }
-
 
 
 int main() {
@@ -152,6 +143,6 @@ int main() {
     spawn(computePower, 0);
     spawn(computePrimes, 1);
     spawn(computeExponential, 2);
-    spawn(computeExponential,3);
+    spawn(computeExponential, 3);
     toggle_led(4);
 }
