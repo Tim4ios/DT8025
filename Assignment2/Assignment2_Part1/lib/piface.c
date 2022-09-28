@@ -191,7 +191,7 @@ uint8_t piface_getc(void) {
 /** @brief Writes a character
  */
 void piface_putc(char c) {
-
+    //counter to know when to reset
     switch (c) {
         case '\n' :
             lcd_write_cmd(0xc0);
@@ -207,6 +207,7 @@ void piface_putc(char c) {
 /** @brief Writes a string
  */
 void piface_puts(char s[]) {
+    //dont check for /n
     size_t l = strlen(s);
     for (size_t i = 0; i < l; i++)
     {

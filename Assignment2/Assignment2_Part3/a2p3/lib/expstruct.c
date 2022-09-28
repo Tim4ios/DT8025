@@ -62,8 +62,8 @@ ExpStruct *iexp(int x) {
         memory = temp;
 
         //led_blink();
-        RPI_WaitMicroSeconds(200000);
         toggle();
+        RPI_WaitMicroSeconds(300000);
     }
 
     e->expInt = temp;

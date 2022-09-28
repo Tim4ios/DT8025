@@ -223,10 +223,8 @@ void piface_puts(char s[]) {
 /** @brief Clears the display
  */
 void piface_clear(void) {
-
-    RPI_WaitMicroSeconds(300000);
     lcd_write_cmd(0x01);
-
+    LCD_DELAY;
     /* clear display */
 }
 
