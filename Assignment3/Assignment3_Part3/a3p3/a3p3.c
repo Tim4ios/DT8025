@@ -48,6 +48,22 @@ int is_prime(int i) {
   * @param int seg Is the segment, i.e., 0: top left, 1:top right, 2: bottom left and 3: bottom right.
  */
 void toggle_led(int seg) {
+    int temp=0;
+    while(1) {
+        if(temp==seg){
+            RPI_WaitMicroSeconds(500000);
+            toggle();
+            temp=0;
+        }
+        yield();
+        temp++;
+    }
+}
+
+
+
+
+void toggle_piface(int seg) {
     int col=0;
     int row=0;
     //If seg is 0 then 0,0, 1 then 1,0, 2 then 0,1, 3 then 1,1
@@ -66,6 +82,7 @@ void toggle_led(int seg) {
             break;
     }
     piface_set_cursor(col,row);
+
 }
 
 /** @brief For all positive integers, displays prime numbers in a given segment 
@@ -75,10 +92,8 @@ void computePrimes(int seg) {
     for(int n = 0; ; n++) {  
         if (is_prime(n)) {
             //PUTTOLDC("T%i: Prime %i\n", seg, n);
-
             print_at_seg(seg,n);
             RPI_WaitMicroSeconds(500000); //delay of 0.5s added for visualization purposes!!!
-
             yield();
         }
     }
@@ -102,45 +117,40 @@ void computePower(int seg) {
  */
 void computeExponential(int seg) {
     //It will compute and display the result of the iexp function in a particular segment in the LED
-    char *str = malloc(32 * sizeof(char));
 	ExpStruct* value;
     for (int i = 1; i < 21; ++i) {
         value = iexp(i);
-        piface_clear();
-
         if(seg%2) {
-            print_at_seg(seg,value->expFraction);
-            //sprintf(str,"%d: %d", i, value->expFraction);
-        }else
             print_at_seg(seg,value->expInt);
-           // sprintf(str,"%d: %d", i, value->expInt);
+            RPI_WaitMicroSeconds(500000);
+            yield();
+            //sprintf(str,"%d: %d", i, value->expFraction);
+        }else{
+            print_at_seg(seg, value->expFraction);
+            RPI_WaitMicroSeconds(500000);
+            yield();
+            // sprintf(str,"%d: %d", i, value->expInt);
+        }
 
-
-        free(value);
     }
+
 
 }
 
 
 
 int main() {
-	led_init();
-	
-	piface_init();
-	piface_clear();
-	
-	piface_puts("DT8025 - A3P3");
-	RPI_WaitMicroSeconds(2000000);	
-	piface_clear();
-    /*print_at_seg(0,1);
-    print_at_seg(1,2);
-    print_at_seg(2,3);
-    print_at_seg(3,4);*/
-    //print_at_seg(5,7);
-    //piface_set_cursor(8,1);
-    //piface_putc('a');
-	spawn(computePower, 0);
-	computePrimes(1);
+    led_init();
+    piface_init();
+    piface_clear();
+    piface_puts("DT8025 - A3P3");
+    RPI_WaitMicroSeconds(1000000);
+    piface_clear();
 
-   // computeExponential(3);
+
+    spawn(computePower, 0);
+    spawn(computePrimes, 1);
+    spawn(computeExponential, 2);
+    spawn(computeExponential,3);
+    toggle_led(4);
 }
