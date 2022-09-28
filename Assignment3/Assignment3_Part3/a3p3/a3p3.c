@@ -139,7 +139,7 @@ int main() {
     piface_init();
     piface_clear();
     piface_puts("DT8025 - A3P3");
-    RPI_WaitMicroSeconds(1000000);
+    RPI_WaitMicroSeconds(2000000);
     piface_clear();
 
 
