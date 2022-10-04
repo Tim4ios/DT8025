@@ -144,10 +144,13 @@ int main() {
     led_init();
     toggle();
     spawn(computePower, 0);
-    spawn(computePower, 1);
-    spawn(computePrimes, 2);
-    spawn(computePrimes, 3);
-    spawn(computeExponential, 4);
-    spawn(computeExponential, 5);
+    //spawn(computePower, 1);
+    spawn(computePrimes,1);
+    //spawn(computePrimes, 2);
+    //spawn(computePrimes, 3);
+    //spawn(computeExponential, 4);
+    //spawn(computeExponential, 5);
+    spawn(computeExponential, 2);
+    spawn(computeExponential, 3);
     toggle_led(6);
 }
