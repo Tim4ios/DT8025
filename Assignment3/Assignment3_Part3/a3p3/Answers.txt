@@ -3,9 +3,9 @@ Compile the code and boot the RPi using the newly created kernel, i.e., a3p3.img
 Does it work? Create a file called Answers.txt and the explanation for why this new kernel is not working as expected.
 
 Answer:
-No, it does not work. When we start the Raspberry Pi, the led is turned on and piface also, but it wont print anything and it just stops.
+No, it does not work. When we start the Raspberry Pi, the LED is turned on and piface also, but it won't print anything, and it just stops.
 
 Since the thread only has 5 set as the maximum limit, calling spawn 6 times won't work. #define NTHREADS	5.
 Also that we created a switch case that will return "Invalid segment" if passing a higher segment than 3. (Quadrants)
 But with that meaning it should still print out the first 0-3 segments, and skip segment 4-5 with the print on the piface.
-The reason for this is that we call the function spawn 6 times, but as mention above the NTHREADS cannot be more then 5.
+The reason for this is that we call the function spawn 6 times, but as mention above the NTHREADS cannot be more than 5.
