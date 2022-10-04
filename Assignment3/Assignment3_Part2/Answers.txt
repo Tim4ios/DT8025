@@ -35,6 +35,8 @@ However, and considering the a3p1.img kernel, these functions are executed concu
 8. Again, computePower and computePrimes never return. However, consider a situation when these functions return.
 This implies that the tiny thread assigned to execute the task will terminate.
 Consequently, if you want or need to execute a task again, you might need to track which tiny threads terminated.
-One approach is to keep information about the terminated threads in a list called doneQ. Thus, where in lib/tinythreads.c, would add the tiny thread that terminated into doneQ?
+One approach is to keep information about the terminated threads in a list called doneQ. Thus, where in lib/tinythreads.c,
+would add the tiny thread that terminated into doneQ?
+
     //Får kolla på den också
     Should be done in the function yield();
