@@ -11,18 +11,18 @@
 
 volatile unsigned int LED;
 
-void led_init(){
-	/* Write 1 to the GPIO16 init nibble in the Function Select 1 GPIO
+void led_init() {
+    /* Write 1 to the GPIO16 init nibble in the Function Select 1 GPIO
        peripheral register to enable GPIO16 as an output */
     GPIO->GPFSEL1 |= (1 << 18);
     LED = 0;
 #if defined( RPI3 ) && defined( IOBPLUS )
-	RPI_SetGpioPinFunction( LED_GPIO, FS_OUTPUT );
+    RPI_SetGpioPinFunction( LED_GPIO, FS_OUTPUT );
 #endif
 }
 
-void led_on(){
-	/* Set the GPIO16 output high ( Turn OK LED off )*/
+void led_on() {
+    /* Set the GPIO16 output high ( Turn OK LED off )*/
     GPIO->GPSET0 = 0b10000000000000000;
     LED = 1;
 /*
@@ -38,8 +38,8 @@ void led_on(){
 #endif*/
 }
 
-void led_off(){
-	/* Set the GPIO16 output high ( Turn OK LED off )*/
+void led_off() {
+    /* Set the GPIO16 output high ( Turn OK LED off )*/
     GPIO->GPCLR0 = 0b10000000000000000;
     LED = 0;
 /*
@@ -58,22 +58,22 @@ void led_off(){
 
 }
 
-void led_blink(){
+void led_blink() {
     led_on();
     RPI_WaitMicroSeconds(300000);
     led_off();
 }
 
-void toggle(){
+void toggle() {
 
-    if(LED){
+    if (LED) {
         led_off();
-    }else{
+    } else {
         led_on();
     }
 
 
-   //LED ? led_off : led_on; //Doesn't work for some reason
+    //LED ? led_off : led_on; //Doesn't work for some reason
 }
 
 

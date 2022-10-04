@@ -145,7 +145,7 @@ int main() {
     toggle();
     spawn(computePower, 0);
     //spawn(computePower, 1);
-    spawn(computePrimes,1);
+    spawn(computePrimes, 1);
     //spawn(computePrimes, 2);
     //spawn(computePrimes, 3);
     //spawn(computeExponential, 4);
