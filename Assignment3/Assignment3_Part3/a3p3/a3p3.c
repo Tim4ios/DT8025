@@ -135,17 +135,19 @@ void computeExponential(int seg) {
 
 
 int main() {
-    led_init();
     piface_init();
-    piface_clear();
     piface_puts("DT8025 - A3P3");
     RPI_WaitMicroSeconds(2000000);
     piface_clear();
 
 
+    led_init();
+    toggle();
     spawn(computePower, 0);
-    spawn(computePrimes, 1);
-    spawn(computeExponential, 2);
-    spawn(computeExponential, 3);
-    toggle_led(4);
+    spawn(computePower, 1);
+    spawn(computePrimes, 2);
+    spawn(computePrimes, 3);
+    spawn(computeExponential, 4);
+    spawn(computeExponential, 5);
+    toggle_led(6);
 }

@@ -147,7 +147,7 @@ void spawn(void (*function)(int), int arg) {
         ENABLE();
         current->function(current->arg);
         DISABLE();
-        enqueue(current, &free);
+        enqueue(current, &freeQ);
         current = NULL;
         dispatch(dequeue(&readyQ));
     }
