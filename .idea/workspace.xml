@@ -20,19 +20,25 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d48a88e7-3145-42a7-af5e-a3ce2e96ea94" name="Changes" comment="s">
+    <list default="true" id="d48a88e7-3145-42a7-af5e-a3ce2e96ea94" name="Changes" comment="k">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/Assignment4_Part1/a4p1/a4p1.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/Assignment4_Part1/a4p1/a4p1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/Assignment4_Part1/a4p1/a4p1.elf" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/Assignment4_Part1/a4p1/a4p1.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/Assignment4_Part1/a4p1/a4p1.img" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/Assignment4_Part1/a4p1/a4p1.img" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/Assignment4_Part1/a4p1/a4p1.o" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/Assignment4_Part1/a4p1/a4p1.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/Assignment4_Part1/a4p1/lib/expstruct.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/Assignment4_Part1/a4p1/lib/expstruct.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/Assignment4_Part1/a4p1/lib/expstruct.o" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/Assignment4_Part1/a4p1/lib/expstruct.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2_Part2/Assigment2part2/a2p2.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment4/Assignment4_Part1/a4p1/lib/piface.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/Assignment4_Part1/a4p1/lib/piface.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/Assignment4_Part1/a4p1/lib/piface.o" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/Assignment4_Part1/a4p1/lib/piface.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/Assignment4_Part1/a4p1/lib/rpi-interrupts.o" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/Assignment4_Part1/a4p1/lib/rpi-interrupts.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/Assignment4_Part1/a4p1/lib/tinythreads.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/Assignment4_Part1/a4p1/lib/tinythreads.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment4/Assignment4_Part1/a4p1/lib/tinythreads.o" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/Assignment4_Part1/a4p1/lib/tinythreads.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-e120cba43b61d77114e4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-3e6b1741ae38f0623953.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeRCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeRCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,25 +72,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Program Files (x86)/GnuWin32/bin/make.exe&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.make&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "C:/Program Files (x86)/GnuWin32/bin/make.exe",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Assignment3/Assignment3_Part3" />
@@ -409,14 +415,7 @@
       <option name="project" value="LOCAL" />
       <updated>1665752239890</updated>
     </task>
-    <task id="LOCAL-00035" summary="s">
-      <created>1665755569340</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1665755569340</updated>
-    </task>
-    <option name="localTasksCounter" value="36" />
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,9 +440,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="README updatering" />
-    <MESSAGE value="k" />
     <MESSAGE value="s" />
-    <option name="LAST_COMMIT_MESSAGE" value="s" />
+    <MESSAGE value="k" />
+    <option name="LAST_COMMIT_MESSAGE" value="k" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
