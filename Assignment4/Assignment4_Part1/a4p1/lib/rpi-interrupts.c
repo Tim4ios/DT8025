@@ -33,7 +33,7 @@ void __attribute__((interrupt("ABORT"))) reset_vector(void)
 /**
     @brief The undefined instruction interrupt handler
 
-    If an undefined intstruction is encountered, the CPU will start
+    If an undefined instruction is encountered, the CPU will start
     executing this function. Just trap here as a debug solution.
 */
 void __attribute__((interrupt("UNDEF"))) undefined_instruction_vector(void)
@@ -95,13 +95,15 @@ void __attribute__((interrupt("ABORT"))) data_abort_vector(void)
 void __attribute__((interrupt("IRQ"))) interrupt_vector(void)
 {
     if( RPI_GetArmTimer()->MaskedIRQ ) {
-        scheduler();
         /* Clear the ARM Timer interrupt - it's the only interrupt we have
            enabled, so we want don't have to work out which interrupt source
            caused us to interrupt */
         ticks++;
         RPI_GetArmTimer()->IRQClear = 1;
+
+        scheduler();
     }
+
 }
 
 /**

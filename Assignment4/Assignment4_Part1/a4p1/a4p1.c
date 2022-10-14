@@ -24,14 +24,14 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-#include "tinythreads.h"
-#include "rpi3.h"
-#include "piface.h"
-#include "expstruct.h"
+#include "lib/tinythreads.h"
+#include "lib/rpi3.h"
+#include "lib/piface.h"
+#include "lib/expstruct.h"
 
-#include "rpi-armtimer.h"
-#include "rpi-systimer.h"
-#include "rpi-interrupts.h"
+#include "lib/rpi-armtimer.h"
+#include "lib/rpi-systimer.h"
+#include "lib/rpi-interrupts.h"
 
 __attribute__(( always_inline )) static inline void enable_interrupts() {
   __asm volatile("cpsie i \n"); 
@@ -106,7 +106,7 @@ void computeSomethingForever(int seg) {
 void computeSomething(int seg) {
 	volatile int t = ticks;
 	ExpStruct* value = iexp(10);
-	printf_at_seg(seg % 4, "S%d: %d", seg, t);
+	//printf_at_seg(seg % 4, "S%d: %d", seg, t);
 	while(t==ticks);
 } 
 
