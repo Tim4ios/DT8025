@@ -17,7 +17,7 @@
 #include "rpi-interrupts.h"
 #include "tinythreads.h"
 
-volatile int ticks = 0;
+volatile int ticks = -1;
 /**
     @brief The Reset vector interrupt handler
 

@@ -5,6 +5,7 @@
     <sourceRoots>
       <file path="$PROJECT_DIR$/Assignment3/Assignment3_Part1" />
       <file path="$PROJECT_DIR$/Assignment3/Assignment3_Part3" />
+      <file path="$PROJECT_DIR$/Assignment4" />
     </sourceRoots>
   </component>
 </project>

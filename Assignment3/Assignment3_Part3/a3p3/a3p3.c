@@ -84,7 +84,7 @@ void computePrimes(int seg) {
         if (is_prime(n)) {
             //PUTTOLDC("T%i: Prime %i\n", seg, n);
             print_at_seg(seg, n);
-            RPI_WaitMicroSeconds(500000); //delay of 0.5s added for visualization purposes!!!
+            RPI_WaitMicroSeconds(200000); //delay of 0.5s added for visualization purposes!!!
             yield();
         }
     }
@@ -97,7 +97,7 @@ void computePower(int seg) {
     for (int n = 0;; n++) {
         //PUTTOLDC("T%i: %i^2=%i\n", seg, n, n*n);
         print_at_seg(seg, n * n);
-        RPI_WaitMicroSeconds(500000); //delay of 0.5s added for visualization purposes!!!
+        RPI_WaitMicroSeconds(200000); //delay of 0.5s added for visualization purposes!!!
         yield();
     }
 }
@@ -123,7 +123,7 @@ void computeExponential(int seg) {
                 // sprintf(str,"%d: %d", i, value->expInt);
             }
 
-            RPI_WaitMicroSeconds(500000);
+            RPI_WaitMicroSeconds(200000);
             free(value);
             yield();
         }
