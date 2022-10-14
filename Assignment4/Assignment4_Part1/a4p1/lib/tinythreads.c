@@ -217,7 +217,7 @@ void respawn_periodic_tasks(void) {
 /** @brief Schedules tasks using time slicing
  */
 static void scheduler_RR(void){
-    //Same as in yield
+    //Same as in yields
     DISABLE();
     if (readyQ != NULL){
         thread p = dequeue(&readyQ);
@@ -246,6 +246,7 @@ static void scheduler_EDF(void){
  */
 void scheduler(void){
 	// To be implemented in Assignment 4!!!
+    scheduler_RR();
 }
 
 /** @brief Prints via UART the content of the main variables in TinyThreads
