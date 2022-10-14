@@ -11,7 +11,7 @@
     After spawn is called in line 3, a computePower thread is in readyQ.
 
 5. After finishing the execution of line 3, describe the content of freeQ.
-    It's empty since no thread has been executed or stacked so far.
+    4 empty threadblocks ready to be initialized.
 
 
 6. Consider the code above and the a3p1.img kernel from Part 1. Which task executes first? Why?
@@ -19,7 +19,7 @@
 
 7. As they are, functions computePower and computePrimes execute indefinitely, i.e, never return.
 However, and considering the a3p1.img kernel, these functions are executed concurrently. How?
-    Because of the function of yield(), when it's called it preemts the current function/thread and call or recall the other funtion through dispatch().
+    Because of the function of yield(), when it's called it preemts the current function/thread and call or recall the other function through dispatch().
     In this case each thread take turns on being on the readyQ queue while the other finishes a loop.
 
 8. Again, computePower and computePrimes never return. However, consider a situation when these functions return.
@@ -27,4 +27,4 @@ This implies that the tiny thread assigned to execute the task will terminate.
 Consequently, if you want or need to execute a task again, you might need to track which tiny threads terminated.
 One approach is to keep information about the terminated threads in a list called doneQ. Thus, where in lib/tinythreads.c,
 would add the tiny thread that terminated into doneQ?
-    Dispatch since the function is the one to start and resume a given thread. If it is unable to start or resume the thread it should parse the thread to doneQ.
+    in Spawn right before current is set to NULL, after that the thread is lost.
