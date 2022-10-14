@@ -217,7 +217,14 @@ void respawn_periodic_tasks(void) {
 /** @brief Schedules tasks using time slicing
  */
 static void scheduler_RR(void){
-	// To be implemented in Assignment 4!!!
+    //Same as in yield
+    DISABLE();
+    if (readyQ != NULL){
+        thread p = dequeue(&readyQ);
+        enqueue(current, &readyQ);
+        dispatch(p);
+    }
+    ENABLE();
 }
 
 /** @brief Schedules periodic tasks using Rate Monotonic (RM) 
