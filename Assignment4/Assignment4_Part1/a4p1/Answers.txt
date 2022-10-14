@@ -1,0 +1,6 @@
+Q:  What is the purpose of the macros DISABLE() and ENABLE()?
+A:
+
+Q:  What could happen if a yield() call was injected at the worst place possible within functions like dispatch()or enqueue()?
+    What about injecting such a call into yield() itself?
+A:
