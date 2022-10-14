@@ -53,7 +53,6 @@ ExpStruct *iexp(int x) {
     double memory = 0;
 
     while(two_dec_pre){
-        RPI_WaitMicroSeconds(30000);
         temp += ppow(x,counter)/fac(counter);
         counter++;
 

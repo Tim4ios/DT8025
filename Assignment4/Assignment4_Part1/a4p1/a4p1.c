@@ -95,7 +95,9 @@ void computeSomethingForever(int seg) {
     {
 		// exp of the 1st 9 positive integers, except 0 
 		value = iexp((i%8)+1);
+        lock(&mute);
 		print_at_seg(seg % 4, value->expInt);
+        unlock(&mute);
 		// printf_at_seg(seg % 4, "S%i: %04i", seg, value->expInt);
     }
 } 
@@ -117,8 +119,11 @@ int main() {
 	RPI_WaitMicroSeconds(2000000);	
 	piface_clear();
     initTimerInterrupts();
+
+
     spawn(computeSomethingForever, 0);
     spawn(computeSomethingForever, 1);
     spawn(computeSomethingForever, 2);
-    computeSomethingForever(3);	
+    computeSomethingForever(3);
+
 }
