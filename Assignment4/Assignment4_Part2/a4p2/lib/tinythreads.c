@@ -213,6 +213,25 @@ void unlock(mutex *m) {
  */
 void spawnWithDeadline(void (* function)(int), int arg, unsigned int deadline, unsigned int rel_deadline) {
 	// To be implemented in Assignment 4!!!
+    thread newp;
+    DISABLE();
+    if (!initialized)
+        initialize();
+    newp = dequeue(&freeQ);
+    newp->function = function;
+    newp->arg = arg;
+    newp->next = NULL;
+    if (setjmp(newp->context) == 1) {
+        ENABLE();
+        current->function(current->arg);
+        DISABLE();
+        enqueue(current, &free);
+        current = NULL;
+        dispatch(dequeue(&readyQ));
+    }
+    SETSTACK(&newp->context, &newp->stack);
+    enqueue(newp, &readyQ);
+    ENABLE();
 }
 
 
@@ -253,7 +272,7 @@ static void scheduler_RR(void){
 /** @brief Schedules periodic tasks using Rate Monotonic (RM) 
  */
 static void scheduler_RM(void){
-	// To be implemented in Assignment 4!!!
+
 }
 
 /** @brief Schedules periodic tasks using Earliest Deadline First  (EDF) 
@@ -268,7 +287,8 @@ static void scheduler_EDF(void){
  * it will first call the method that re-spawns period tasks.
  */
 void scheduler(void){
-    scheduler_RR();
+    //scheduler_RR();
+    scheduler_RM();
 }
 
 /** @brief Prints via UART the content of the main variables in TinyThreads
