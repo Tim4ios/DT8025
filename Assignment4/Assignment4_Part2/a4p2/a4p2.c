@@ -24,7 +24,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-#include "tinythreads.h"
+#include "lib/tinythreads.h"
 #include "rpi3.h"
 #include "piface.h"
 #include "expstruct.h"
@@ -106,14 +106,15 @@ void computeSomethingForever(int seg) {
 void computeSomething(int seg) {
 	volatile int t = ticks;
 	ExpStruct* value = iexp(10);
-	printf_at_seg(seg % 4, "S%d: %d", seg, t);
+    print_at_seg(seg ,t);
+    //printf_at_seg(seg % 4, "S%d: %d", seg, t);
 	while(t==ticks);
 } 
 
 int main() {
 	piface_init();
 	piface_puts("DT8025 - A4P2");
-	RPI_WaitMicroSeconds(2000000);	
+	RPI_WaitMicroSeconds(2000000);
 	piface_clear();
     
 	spawnWithDeadline(computeSomething, 0, 5, 5);
