@@ -223,6 +223,7 @@ void spawnWithDeadline(void (* function)(int), int arg, unsigned int deadline, u
     newp->Period_Deadline = deadline;
     newp->Rel_Period_Deadline = rel_deadline;
 
+
     if (setjmp(newp->context) == 1) {
         ENABLE();
         current->function(current->arg);
@@ -244,7 +245,11 @@ void spawnWithDeadline(void (* function)(int), int arg, unsigned int deadline, u
 static void sortX(thread *queue) {
     //if(doneQ==NULL)return;
 
-    thread p = dequeue(queue);
+    thread p = queue;
+    print_at_seg(3,p->Rel_Period_Deadline);
+    print_at_seg(3,p->next->Rel_Period_Deadline);
+    print_at_seg(3,p->next->next->Rel_Period_Deadline);
+
     thread index = NULL;
     thread tempThread = NULL;
 
@@ -253,10 +258,8 @@ static void sortX(thread *queue) {
     }else {
         while(p != NULL) {
             index = p->next;
-
             while(index!= NULL) {
-                //If current node's data is greater than index's node data, swap the data between them
-                if(p->Period_Deadline > index->Period_Deadline){
+                if(&p->Period_Deadline > &index->Period_Deadline){
                     tempThread = p;
                     p = index;
                     index = tempThread;
@@ -264,6 +267,7 @@ static void sortX(thread *queue) {
                 index = index->next;
             }
             p = p->next;
+
         }
     }
 }
@@ -278,11 +282,20 @@ static thread dequeueItem(thread *queue, int idx) {
  */
 void respawn_periodic_tasks(void) {
     DISABLE();
-    if(doneQ!=NULL) {
-        sortX(doneQ);
-        thread p = dequeue(doneQ);
-        spawnWithDeadline(p->function,p->arg,p->Period_Deadline,p->Rel_Period_Deadline);
-    }
+    thread newp;
+        //spawnWithDeadline(p->function,p->arg,p->Period_Deadline,p->Rel_Period_Deadline);
+        newp = dequeue(&doneQ);
+        sortX(&doneQ);
+        if (setjmp(newp->context) == 1) {
+            ENABLE();
+            current->function(current->arg);
+            DISABLE();
+            enqueue(current, &doneQ); //Changed to doneQ
+            current = NULL;
+            dispatch(dequeue(&readyQ));
+        }
+        SETSTACK(&newp->context, &newp->stack);
+        enqueue(newp, &readyQ);
     ENABLE();
 
 }
@@ -306,8 +319,7 @@ static void scheduler_RR(void){
 /** @brief Schedules periodic tasks using Rate Monotonic (RM) 
  */
 static void scheduler_RM(void){
-    sortX(readyQ);
-
+    sortX(&readyQ);
     DISABLE();
     if (readyQ != NULL){
         thread p = dequeue(&readyQ);

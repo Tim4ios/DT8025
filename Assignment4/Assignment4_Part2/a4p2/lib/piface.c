@@ -229,6 +229,7 @@ void piface_clear(void) {
 
 
 void print_at_seg(int seg, int num) {
+    RPI_WaitMicroSeconds(600000);
     char string[9];
     sprintf(string, "S%d: %d", seg, num);
     //We have 4 segments locations of the cursor: 0 0x60? 0xc0 0x120?
