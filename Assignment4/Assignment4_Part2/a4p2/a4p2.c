@@ -126,23 +126,29 @@ int main() {
         no_operation();
 }
 
-def sortList(self):
-#Node current will point to head
-current = self.head;
-index = None;
+void sortList() {
+    //Node current will point to head
+    struct node *current = head, *index = NULL;
+    int temp;
 
-if(self.head == None):
-return;
-else:
-while(current != None):
-#Node index will point to node next to current
-index = current.next;
+    if(head == NULL) {
+        return;
+    }
+    else {
+        while(current != NULL) {
+            //Node index will point to node next to current
+            index = current->next;
 
-while(index != None):
-#If current node's data is greater than index's node data, swap the data between them
-if(current.data > index.data):
-temp = current.data;
-current.data = index.data;
-index.data = temp;
-index = index.next;
-current = current.next;
+            while(index != NULL) {
+                //If current node's data is greater than index's node data, swap the data between them
+                if(current->data > index->data) {
+                    temp = current->data;
+                    current->data = index->data;
+                    index->data = temp;
+                }
+                index = index->next;
+            }
+            current = current->next;
+        }
+    }
+}
