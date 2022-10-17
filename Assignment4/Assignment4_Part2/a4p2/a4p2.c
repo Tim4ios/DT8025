@@ -126,29 +126,4 @@ int main() {
         no_operation();
 }
 
-void sortList() {
-    //Node current will point to head
-    struct node *current = head, *index = NULL;
-    int temp;
 
-    if(head == NULL) {
-        return;
-    }
-    else {
-        while(current != NULL) {
-            //Node index will point to node next to current
-            index = current->next;
-
-            while(index != NULL) {
-                //If current node's data is greater than index's node data, swap the data between them
-                if(current->data > index->data) {
-                    temp = current->data;
-                    current->data = index->data;
-                    index->data = temp;
-                }
-                index = index->next;
-            }
-            current = current->next;
-        }
-    }
-}
