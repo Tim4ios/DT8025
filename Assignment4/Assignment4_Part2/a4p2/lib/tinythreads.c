@@ -89,10 +89,15 @@ void initialize(void) {
  */
 static void enqueue(thread p, thread *queue) {
     //insertion sort implemented
+
+    //reset p->next
     p->next = NULL;
+
+    //If queue is empty set head of queue to p
     if (*queue == NULL) {
         *queue = p;
     } else {
+        //Temp variable to compare deadlines
         thread q = *queue;
 
         //If we want to insert at the start of the queue
@@ -101,7 +106,7 @@ static void enqueue(thread p, thread *queue) {
             *queue = p;
             return;
         } else {
-
+            //While q has a next compare the elements
             while (q->next) {
                 if (p->Period_Deadline < q->next->Period_Deadline) {
                     p->next = q->next;
@@ -110,6 +115,7 @@ static void enqueue(thread p, thread *queue) {
                 }
                 q = q->next; //iterating
             }
+            //q didn't have a next so now p is qs next since it's the largest number in the queue
             q->next = p;
         }
     }
@@ -299,9 +305,10 @@ void respawn_periodic_tasks(void) {
     DISABLE();
     thread newp;
     newp = dequeue(&doneQ);
+
     //sortX(&doneQ);
 
-    if (setjmp(newp->context) == 1) {
+    if ((setjmp(newp->context) == 1)) {
         ENABLE();
         current->function(current->arg);
         DISABLE();
@@ -334,7 +341,7 @@ static void scheduler_RR(void) {
  */
 static void scheduler_RM(void) {
     DISABLE();
-    if (readyQ != NULL && ((ticks % readyQ->Period_Deadline) == 0)) {
+    if (readyQ != NULL&&((ticks % readyQ->Period_Deadline) == 0)) {
         thread p = dequeue(&readyQ);
         enqueue(current, &readyQ);
         dispatch(p);
