@@ -93,11 +93,24 @@ static void enqueue(thread p, thread *queue) {
         *queue = p;
     } else {
         thread q = *queue;
-        while (q->next)
-            q = q->next;
-        q->next = p;
+        int count = 0;
+        while (q) {
+            if(p->Period_Deadline<q->Period_Deadline){ //insertion sort
+                p->next=q;
+                if(count==0){
+                    *queue = p;
+                }
+                return;
+            }else
+                if(q->next==NULL){
+                    q->next= p;
+                    return;
+                }
+              q=q->next;
+                count++;
+        }
     }
-    sortX(&queue);
+
 }
 
 /** @brief Remove an element from the head of the queue
@@ -249,15 +262,16 @@ static void sortX(thread *queue) {
     thread p = *queue;
     thread index;
     thread tempThread;
+    print_at_seg(3, p->Period_Deadline);
 
     if (*queue == NULL) {
         return;
     } else {
-        while (p != NULL) {
+        while (p->next != NULL) {
             index = p->next;
-            //print_at_seg(3, (int)p->next->Period_Deadline);
+            print_at_seg(3, (int)p->next->Period_Deadline);
             while (index != NULL) {
-                if (&p->Rel_Period_Deadline> &index->Rel_Period_Deadline) {
+                if (p->Period_Deadline > index->Period_Deadline) {
                     tempThread = p;
                     p = index;
                     index = tempThread;
