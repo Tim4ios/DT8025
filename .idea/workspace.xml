@@ -23,6 +23,7 @@
     <list default="true" id="d48a88e7-3145-42a7-af5e-a3ce2e96ea94" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment4/Assignment4_Part2/a4p2/a4p2.elf" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/Assignment4_Part2/a4p2/a4p2.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/Assignment4_Part2/a4p2/a4p2.img" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/Assignment4_Part2/a4p2/a4p2.img" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment4/Assignment4_Part2/a4p2/lib/tinythreads.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/Assignment4_Part2/a4p2/lib/tinythreads.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment4/Assignment4_Part2/a4p2/lib/tinythreads.o" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/Assignment4_Part2/a4p2/lib/tinythreads.o" afterDir="false" />
     </list>
@@ -465,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666086775071</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="s">
+      <created>1666088493705</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1666088493705</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

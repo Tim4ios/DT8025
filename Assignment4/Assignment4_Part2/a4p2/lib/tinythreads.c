@@ -305,19 +305,21 @@ void respawn_periodic_tasks(void) {
     DISABLE();
     thread newp;
     newp = dequeue(&doneQ);
+    while (doneQ) {
+        if ((setjmp(newp->context) == 1)&&(ticks%readyQ->Period_Deadline==0)) {
+            ENABLE();
+            current->function(current->arg);
+            DISABLE();
+            enqueue(current, &doneQ); //Changed to doneQ
+            current = NULL;
+            dispatch(dequeue(&readyQ));
 
-    //sortX(&doneQ);
-
-    if ((setjmp(newp->context) == 1)) {
-        ENABLE();
-        current->function(current->arg);
-        DISABLE();
-        enqueue(current, &doneQ); //Changed to doneQ
-        current = NULL;
-        dispatch(dequeue(&readyQ));
+        }
     }
+
     SETSTACK(&newp->context, &newp->stack);
     enqueue(newp, &readyQ);
+
     ENABLE();
 
 }
@@ -341,7 +343,7 @@ static void scheduler_RR(void) {
  */
 static void scheduler_RM(void) {
     DISABLE();
-    if (readyQ != NULL&&((ticks % readyQ->Period_Deadline) == 0)) {
+    if (readyQ != NULL) {
         thread p = dequeue(&readyQ);
         enqueue(current, &readyQ);
         dispatch(p);
@@ -362,8 +364,10 @@ static void scheduler_EDF(void) {
  */
 void scheduler(void) {
     //scheduler_RR();
+    DISABLE();
     respawn_periodic_tasks();
     scheduler_RM();
+    ENABLE();
 }
 
 /** @brief Prints via UART the content of the main variables in TinyThreads
