@@ -113,14 +113,14 @@ static void enqueue_sort(thread p, thread *queue) {
         thread q = *queue;
 
         //If we want to insert at the start of the queue
-        if (p->Rel_Period_Deadline < q->Rel_Period_Deadline) {
+        if (p->Period_Deadline < q->Period_Deadline) {
             p->next = q;
             *queue = p;
             return;
         } else {
             //While q has a next compare the elements
             while (q->next) {
-                if (p->Rel_Period_Deadline < q->next->Rel_Period_Deadline) {
+                if (p->Period_Deadline < q->next->Period_Deadline) {
                     p->next = q->next;
                     q->next = p;
                     return;
@@ -330,7 +330,7 @@ void respawn_periodic_tasks(void) {
     thread tempQ = NULL;
     while(doneQ) {
         newp = dequeue(&doneQ);
-        if (ticks % newp->Rel_Period_Deadline == 0) {
+        if (ticks % newp->Period_Deadline == 0) {
             if ((setjmp(newp->context) == 1)) {
                 ENABLE();
                 current->function(current->arg);
@@ -343,7 +343,6 @@ void respawn_periodic_tasks(void) {
             enqueue_sort(newp, &readyQ);
 
         } else {
-            newp->Rel_Period_Deadline = ticks+newp->Period_Deadline;
             enqueue(newp, &tempQ);
         }
 
@@ -384,13 +383,7 @@ static void scheduler_RM(void) {
 /** @brief Schedules periodic tasks using Earliest Deadline First  (EDF)
  */
 static void scheduler_EDF(void) {
-    DISABLE();
-    if (readyQ != NULL) {
-        thread p = dequeue(&readyQ);
-        enqueue_sort(current, &readyQ);
-        dispatch(p);
-    }
-    ENABLE();
+    // To be implemented in Assignment 4!!!
 }
 
 /** @brief Calls the actual scheduling mechanisms, i.e., Round Robin,
@@ -402,7 +395,7 @@ void scheduler(void) {
     //scheduler_RR();
     DISABLE();
     respawn_periodic_tasks();
-    scheduler_EDF();
+    scheduler_RM();
     ENABLE();
 }
 
