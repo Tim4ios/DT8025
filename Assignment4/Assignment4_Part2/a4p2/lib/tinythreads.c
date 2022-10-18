@@ -88,26 +88,29 @@ void initialize(void) {
  * implementation to enqueue with insertion sort.
  */
 static void enqueue(thread p, thread *queue) {
+    //insertion sort implemented
     p->next = NULL;
     if (*queue == NULL) {
         *queue = p;
     } else {
         thread q = *queue;
-        int count = 0;
-        while (q) {
-            if(p->Period_Deadline<q->Period_Deadline){ //insertion sort
-                p->next=q;
-                if(count==0){
-                    *queue = p;
-                }
-                return;
-            }else
-                if(q->next==NULL){
-                    q->next= p;
+
+        //If we want to insert at the start of the queue
+        if (p->Period_Deadline < q->Period_Deadline) {
+            p->next = q;
+            *queue = p;
+            return;
+        } else {
+
+            while (q->next) {
+                if (p->Period_Deadline < q->next->Period_Deadline) {
+                    p->next = q->next;
+                    q->next = p;
                     return;
                 }
-              q=q->next;
-                count++;
+                q = q->next; //iterating
+            }
+            q->next = p;
         }
     }
 
@@ -258,7 +261,7 @@ void spawnWithDeadline(void (*function)(int), int arg, unsigned int deadline, un
  * https://arxiv.org/abs/2110.01111
  */
 static void sortX(thread *queue) {
-    //if(doneQ==NULL)return;
+    /*//if(doneQ==NULL)return;
     thread p = *queue;
     thread index;
     thread tempThread;
@@ -281,7 +284,7 @@ static void sortX(thread *queue) {
             p = p->next;
 
         }
-    }
+    }*/
 }
 
 /** @brief Removes a specific element from the queue.
@@ -331,7 +334,7 @@ static void scheduler_RR(void) {
  */
 static void scheduler_RM(void) {
     DISABLE();
-    if (readyQ != NULL && (ticks % (readyQ->Period_Deadline) == 0)) {
+    if (readyQ != NULL && ((ticks % readyQ->Period_Deadline) == 0)) {
         thread p = dequeue(&readyQ);
         enqueue(current, &readyQ);
         dispatch(p);
