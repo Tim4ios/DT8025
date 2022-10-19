@@ -1,0 +1,5 @@
+Question: Consider computeSomething function, which has a fixed-length execution time equal to 1 ticks.
+Remove the code while(t==ticks);, compile the code, and boot the RPi using the newly created kernel.
+Create a file called "Answers.txt" and add the answer to the following question:
+What is the result and implication of removing the code while(t==ticks)? Elaborate on your answer.
+

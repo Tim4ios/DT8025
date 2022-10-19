@@ -10,9 +10,7 @@
     <option name="reloaded" value="true" />
   </component>
   <component name="CMakeRunConfigurationManager">
-    <generated>
-      <config projectName="DT8025" targetName="DT8025" />
-    </generated>
+    <generated />
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -20,7 +18,38 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d48a88e7-3145-42a7-af5e-a3ce2e96ea94" name="Changes" comment="" />
+    <list default="true" id="d48a88e7-3145-42a7-af5e-a3ce2e96ea94" name="Changes" comment="s">
+      <change afterPath="$PROJECT_DIR$/Assignment4/Assignment4_Part2/Answers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/Assignment4_Part2/a4p2/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/Assignment4_Part2/a4p2/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/Assignment4_Part2/a4p2/lib/tinythreads.c" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/Assignment4_Part2/a4p2/lib/tinythreads.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment4/Assignment4_Part2/a4p2/lib/tinythreads.o" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment4/Assignment4_Part2/a4p2/lib/tinythreads.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/query/cache-v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-993f57a913be921a9b97.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-DT8025-Debug-fce5f725bacfba709550.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,49 +82,67 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "/Users/joelpalsson/CLionProjects/DT8025/Assignment4/Assignment4_Part3",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.make"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/joelpalsson/CLionProjects/DT8025/Assignment4/Assignment4_Part2/a4p2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.make&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Assignment4/Assignment4_Part3" />
       <recent name="$PROJECT_DIR$/Assignment4/Assignment4_Part2/a4p2" />
       <recent name="$PROJECT_DIR$/Assignment4/Assignment4_Part2" />
       <recent name="$PROJECT_DIR$/Assignment3/Assignment3_Part3" />
       <recent name="$PROJECT_DIR$/Assignment3/Assignment3_Part1/a3p1" />
+      <recent name="$PROJECT_DIR$/Assignment3/Assignment3_Part1/a3p1/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Assignment4/Assignment4_Part3/a4p3" />
       <recent name="$PROJECT_DIR$/Assignment4/Assignment4_Part2/a4p2" />
       <recent name="C:\Users\Johan\CLionProjects\DT8025\Assignment1\Assignment1_Part1" />
       <recent name="C:\Users\Johan\CLionProjects\DT8025\Assignment1\Assignment1_Part2" />
       <recent name="$PROJECT_DIR$/Assignment3/Assignment3_Part1" />
+      <recent name="$PROJECT_DIR$/Assignment2/Assignment2_Part3/a2p3/lib" />
     </key>
   </component>
-  <component name="RunManager" selected="Makefile Target.Makefile (1)">
-    <configuration name="DT8025" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DT8025" TARGET_NAME="DT8025" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DT8025" RUN_TARGET_NAME="DT8025">
+  <component name="RunManager" selected="Makefile Target.Makefile (4)">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Makefile (1)" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/Assignment3/Assignment3_Part3/a3p3/Makefile" target="" workingDirectory="" arguments="">
+    <configuration name="Makefile (2)" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Assignment4/Assignment4_Part3/a4p3/Makefile" target="" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="Makefile (3)" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Assignment4/Assignment4_Part3/a4p3/Makefile" target="" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="Makefile (4)" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Assignment4/Assignment4_Part3/a4p3/Makefile" target="" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="Makefile (5)" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Assignment1/Assignment1_Part1/Assigment1P1/Makefile" target="" workingDirectory="" arguments="">
         <envs />
       </makefile>
       <method v="2" />
@@ -122,14 +169,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="CMake Application.DT8025" />
-      <item itemvalue="Makefile Target.Makefile (1)" />
+      <item itemvalue="Makefile Target.Makefile (3)" />
+      <item itemvalue="Makefile Target.Makefile (4)" />
+      <item itemvalue="Makefile Target.Makefile (5)" />
+      <item itemvalue="Makefile Target.Makefile (2)" />
       <item itemvalue="Makefile Target.Makefile" />
       <item itemvalue="Shell Script.MAKE" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Makefile Target.Makefile (1)" />
+        <item itemvalue="Makefile Target.Makefile (4)" />
+        <item itemvalue="Makefile Target.Makefile (2)" />
+        <item itemvalue="Makefile Target.Makefile (5)" />
+        <item itemvalue="Makefile Target.Makefile (3)" />
         <item itemvalue="Makefile Target.Makefile" />
       </list>
     </recent_temporary>
@@ -158,6 +210,9 @@
       <workItem from="1664260106465" duration="1631000" />
       <workItem from="1664450274517" duration="1657000" />
       <workItem from="1664867363325" duration="3631000" />
+      <workItem from="1666169571187" duration="2000" />
+      <workItem from="1666175020656" duration="1246000" />
+      <workItem from="1666177657160" duration="2000" />
     </task>
     <task id="LOCAL-00001" summary="README updatering">
       <created>1663248046348</created>
@@ -467,21 +522,7 @@
       <option name="project" value="LOCAL" />
       <updated>1666088493705</updated>
     </task>
-    <task id="LOCAL-00045" summary="s">
-      <created>1666092162323</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1666092162323</updated>
-    </task>
-    <task id="LOCAL-00046" summary="s">
-      <created>1666104215292</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1666104215292</updated>
-    </task>
-    <option name="localTasksCounter" value="47" />
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
